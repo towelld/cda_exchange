@@ -105,19 +105,23 @@ view: summary {
   measure: sum_complete {
     type: sum
     sql: ${complete};;
-  }
+    value_format: "0.00"
+    }
   measure: sum_total {
     type: sum
     sql: ${total};;
-  }
+    value_format: "0.00"
+    }
   measure: sum_timely {
     type: sum
     sql: ${timely};;
-  }
+    value_format: "0.00"
+    }
   measure: sum_accurate {
     type: sum
     sql: (${conform}+${valid}+${consistent}+${single})/4;;
-  }
+    value_format: "0.00"
+    }
   measure: sum_conform {
     type: sum
     sql: ${conform};;
