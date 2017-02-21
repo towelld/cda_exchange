@@ -101,4 +101,57 @@ view: summary {
     type: count
     drill_fields: []
   }
+
+  measure: sum_complete {
+    type: sum
+    sql: ${complete};;
+  }
+  measure: sum_total {
+    type: sum
+    sql: ${total};;
+  }
+  measure: sum_timely {
+    type: sum
+    sql: ${timely};;
+  }
+  measure: sum_accurate {
+    type: sum
+    sql: (${conform}+${valid}+${consistent}+${single})/4;;
+  }
+  measure: sum_conform {
+    type: sum
+    sql: ${conform};;
+  }
+  measure: sum_valid {
+    type: sum
+    sql: ${valid};;
+  }
+  measure: sum_consistent {
+    type: sum
+    sql: ${consistent};;
+  }
+  measure: sum_unique {
+    type: sum
+    sql: ${single};;
+  }
+
+  measure: complete_red {
+    type: sum
+    sql: if (${summary.sum_complete}/${summary.sum_total}<0.75,${summary.sum_complete}/${summary.sum_total},0);;
+  }
+
+  measure: complete_amber {
+    type: sum
+    sql: if (${summary.sum_complete}/${summary.sum_total}>=0.75,if(${summary.sum_complete}/${summary.sum_total}<0.9,${summary.sum_complete}/${summary.sum_total},0),0);;
+  }
+
+  measure: complete_green {
+    type: sum
+    sql: if (${summary.sum_complete}/${summary.sum_total}>=0.9,${summary.sum_complete}/${summary.sum_total},0);;
+  }
+
+  measure: complete_total {
+    type: sum
+    sql: 1-(${summary.sum_complete}/${summary.sum_total});;
+  }
 }
