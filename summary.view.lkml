@@ -145,7 +145,7 @@ view: summary {
 
   measure: complete_red {
     type: number
-    sql: case when ${summary.sum_complete}/${summary.sum_total}<0.75 then ${summary.sum_complete}/${summary.sum_total} else 0 end;;
+    sql: case when cast(${summary.sum_complete} as decimal)/${summary.sum_total}<0.75 then ${summary.sum_complete}/${summary.sum_total} else 0 end;;
     value_format: "0.00"
     }
 
