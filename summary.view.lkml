@@ -137,17 +137,17 @@ view: summary {
 
   measure: complete_red {
     type: sum
-    sql: if (${summary.sum_complete}/${summary.sum_total}<0.75,${summary.sum_complete}/${summary.sum_total},0);;
+    sql: case when ${summary.sum_complete}/${summary.sum_total}<0.75 then ${summary.sum_complete}/${summary.sum_total} else 0 end;;
   }
 
   measure: complete_amber {
     type: sum
-    sql: if (${summary.sum_complete}/${summary.sum_total}>=0.75,if(${summary.sum_complete}/${summary.sum_total}<0.9,${summary.sum_complete}/${summary.sum_total},0),0);;
+    sql: case when ${summary.sum_complete}/${summary.sum_total}>=0.75 then case when ${summary.sum_complete}/${summary.sum_total}<0.9 then ${summary.sum_complete}/${summary.sum_total} else 0 end else 0 end ;;
   }
 
   measure: complete_green {
     type: sum
-    sql: if (${summary.sum_complete}/${summary.sum_total}>=0.9,${summary.sum_complete}/${summary.sum_total},0);;
+    sql: case when ${summary.sum_complete}/${summary.sum_total}>=0.9 then ${summary.sum_complete}/${summary.sum_total} else 0 end;;
   }
 
   measure: complete_total {
