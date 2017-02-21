@@ -151,19 +151,19 @@ view: summary {
 
   measure: complete_amber {
     type: number
-    sql: case when ${summary.sum_complete}/${summary.sum_total}>=0.75 then case when ${summary.sum_complete}/${summary.sum_total}<0.9 then ${summary.sum_complete}/${summary.sum_total} else 0 end else 0 end ;;
+    sql: case when cast(${summary.sum_complete} as decimal)/cast(${summary.sum_total} as decimal)>=0.75 then case when cast(${summary.sum_complete} as decimal)/cast(${summary.sum_total} as decimal)<0.9 then cast(${summary.sum_complete} as decimal)/cast(${summary.sum_total} as decimal) else 0 end else 0 end ;;
     value_format: "0.00"
     }
 
   measure: complete_green {
     type: number
-    sql: case when ${summary.sum_complete}/${summary.sum_total}>=0.9 then ${summary.sum_complete}/${summary.sum_total} else 0 end;;
+    sql: case when cast(${summary.sum_complete} as decimal)/cast(${summary.sum_total} as decimal)>=0.9 then cast(${summary.sum_complete} as decimal)/cast(${summary.sum_total} as decimal) else 0 end;;
     value_format: "0.00"
     }
 
   measure: complete_total {
     type: number
-    sql: 1-(${summary.sum_complete}/${summary.sum_total});;
+    sql: 1-(cast(${summary.sum_complete} as decimal)/cast(${summary.sum_total} as decimal));;
     value_format: "0.00"
     }
 }
