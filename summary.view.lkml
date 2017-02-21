@@ -136,22 +136,22 @@ view: summary {
   }
 
   measure: complete_red {
-    type: sum
+    type: number
     sql: case when ${summary.sum_complete}/${summary.sum_total}<0.75 then ${summary.sum_complete}/${summary.sum_total} else 0 end;;
   }
 
   measure: complete_amber {
-    type: sum
+    type: number
     sql: case when ${summary.sum_complete}/${summary.sum_total}>=0.75 then case when ${summary.sum_complete}/${summary.sum_total}<0.9 then ${summary.sum_complete}/${summary.sum_total} else 0 end else 0 end ;;
   }
 
   measure: complete_green {
-    type: sum
+    type: number
     sql: case when ${summary.sum_complete}/${summary.sum_total}>=0.9 then ${summary.sum_complete}/${summary.sum_total} else 0 end;;
   }
 
   measure: complete_total {
-    type: sum
+    type: number
     sql: 1-(${summary.sum_complete}/${summary.sum_total});;
   }
 }
