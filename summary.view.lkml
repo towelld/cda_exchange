@@ -121,37 +121,45 @@ view: summary {
   measure: sum_conform {
     type: sum
     sql: ${conform};;
+    value_format: "0.00"
   }
   measure: sum_valid {
     type: sum
     sql: ${valid};;
-  }
+    value_format: "0.00"
+    }
   measure: sum_consistent {
     type: sum
     sql: ${consistent};;
-  }
+    value_format: "0.00"
+    }
   measure: sum_unique {
     type: sum
     sql: ${single};;
-  }
+    value_format: "0.00"
+    }
 
   measure: complete_red {
     type: number
     sql: case when ${summary.sum_complete}/${summary.sum_total}<0.75 then ${summary.sum_complete}/${summary.sum_total} else 0 end;;
-  }
+    value_format: "0.00"
+    }
 
   measure: complete_amber {
     type: number
     sql: case when ${summary.sum_complete}/${summary.sum_total}>=0.75 then case when ${summary.sum_complete}/${summary.sum_total}<0.9 then ${summary.sum_complete}/${summary.sum_total} else 0 end else 0 end ;;
-  }
+    value_format: "0.00"
+    }
 
   measure: complete_green {
     type: number
     sql: case when ${summary.sum_complete}/${summary.sum_total}>=0.9 then ${summary.sum_complete}/${summary.sum_total} else 0 end;;
-  }
+    value_format: "0.00"
+    }
 
   measure: complete_total {
     type: number
     sql: 1-(${summary.sum_complete}/${summary.sum_total});;
-  }
+    value_format: "0.00"
+    }
 }
