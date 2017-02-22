@@ -61,5 +61,15 @@ view: cdasummary {
     drill_fields: [feature_name]
   }
 
+  measure: sum_fail {
+    type: sum
+    sql: ${total_count};;
+    value_format: "0.00"
+  }
+  measure: sum_total {
+    type: sum
+    sql: ${total_count};;
+    value_format: "0.00"
+  }
 
 }
