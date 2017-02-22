@@ -63,7 +63,7 @@ view: cdasummary {
 
   measure: sum_fail {
     type: sum
-    sql: ${total_count};;
+    sql: ${fail_count};;
     value_format: "0.00"
   }
   measure: sum_total {
