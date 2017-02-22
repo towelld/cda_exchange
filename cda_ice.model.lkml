@@ -6,7 +6,10 @@ include: "*.view"
 # include all the dashboards
 include: "*.dashboard"
 
+explore: cdasummary {}
 explore: summary {}
+explore: records {}
+explore: v_summary {}
 
 # - explore: assigned_role
 
@@ -100,8 +103,4 @@ explore: summary {}
 #       relationship: many_to_one
 
 
-explore: records {}
-
 # - explore: user_audit
-
-explore: v_summary {}
