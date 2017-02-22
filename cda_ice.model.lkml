@@ -100,8 +100,8 @@ explore: summary {}
 #       relationship: many_to_one
 
 
-# - explore: records
+explore: records {}
 
 # - explore: user_audit
 
-# - explore: v_summary
+explore: v_summary {}
