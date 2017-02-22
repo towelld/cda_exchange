@@ -7,9 +7,6 @@ include: "*.view"
 include: "*.dashboard"
 
 explore: cdasummary {}
-explore: summary {}
-explore: records {}
-explore: v_summary {}
 
 # - explore: assigned_role
 
