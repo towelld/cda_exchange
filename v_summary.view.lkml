@@ -302,6 +302,107 @@ view: v_summary {
   }
   measure: sum_complete_red {
     type: sum
-    drill_fields: [complete_red]
+    sql: ${complete_red};;
+    value_format: "0.00"
+  }
+  measure: sum_complete_amber {
+    type: sum
+    sql: ${complete_amber};;
+    value_format: "0.00"
+  }
+  measure: sum_complete_green {
+    type: sum
+    sql: ${complete_green};;
+    value_format: "0.00"
+  }
+  measure: sum_timely_red {
+    type: sum
+    sql: ${timely_red};;
+    value_format: "0.00"
+  }
+  measure: sum_timely_amber {
+    type: sum
+    sql: ${timely_amber};;
+    value_format: "0.00"
+  }
+  measure: sum_timely_green {
+    type: sum
+    sql: ${timely_green};;
+    value_format: "0.00"
+  }
+  measure: sum_accurate_red {
+    type: sum
+    sql: ${accurate_red};;
+    value_format: "0.00"
+  }
+  measure: sum_accurate_amber {
+    type: sum
+    sql: ${accurate_amber};;
+    value_format: "0.00"
+  }
+  measure: sum_accurate_green {
+    type: sum
+    sql: ${accurate_green};;
+    value_format: "0.00"
+  }
+  measure: sum_conform_red {
+    type: sum
+    sql: ${conform_red};;
+    value_format: "0.00"
+  }
+  measure: sum_conform_amber {
+    type: sum
+    sql: ${conform_amber};;
+    value_format: "0.00"
+  }
+  measure: sum_conform_green {
+    type: sum
+    sql: ${conform_green};;
+    value_format: "0.00"
+  }
+  measure: sum_valid_red {
+    type: sum
+    sql: ${valid_red};;
+    value_format: "0.00"
+  }
+  measure: sum_valid_amber {
+    type: sum
+    sql: ${valid_amber};;
+    value_format: "0.00"
+  }
+  measure: sum_valid_green {
+    type: sum
+    sql: ${valid_green};;
+    value_format: "0.00"
+  }
+  measure: sum_consistent_red {
+    type: sum
+    sql: ${consistent_red};;
+    value_format: "0.00"
+  }
+  measure: sum_consistent_amber {
+    type: sum
+    sql: ${consistent_amber};;
+    value_format: "0.00"
+  }
+  measure: sum_consistent_green {
+    type: sum
+    sql: ${consistent_green};;
+    value_format: "0.00"
+  }
+  measure: sum_single_red {
+    type: sum
+    sql: ${single_red};;
+    value_format: "0.00"
+  }
+  measure: sum_single_amber {
+    type: sum
+    sql: ${single_amber};;
+    value_format: "0.00"
+  }
+  measure: sum_single_green {
+    type: sum
+    sql: ${single_green};;
+    value_format: "0.00"
   }
 }
