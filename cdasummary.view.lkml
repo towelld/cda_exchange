@@ -46,6 +46,11 @@ view: cdasummary {
     sql: ${TABLE}.product_group ;;
   }
 
+  dimension: rule_order {
+    type: number
+    sql: ${TABLE}.rule_order ;;
+  }
+
   dimension: rule_type {
     type: string
     sql: ${TABLE}.rule_type ;;
