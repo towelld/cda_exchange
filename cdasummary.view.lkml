@@ -70,11 +70,13 @@ view: cdasummary {
     type: sum
     sql: ${fail_count};;
     value_format: "0.00"
+    label: "Failure"
   }
   measure: sum_total {
     type: sum
     sql: ${total_count};;
     value_format: "0.00"
+    label: "Total"
   }
 
 }
