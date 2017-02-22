@@ -300,4 +300,8 @@ view: v_summary {
     type: count
     drill_fields: [feature_name]
   }
+  measure: sum_complete_red {
+    type: sum
+    drill_fields: [complete_red]
+  }
 }
