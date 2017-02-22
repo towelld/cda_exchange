@@ -7,6 +7,7 @@ include: "*.view"
 include: "*.dashboard"
 
 explore: cdasummary {}
+explore: v_cdarecords {}
 
 # - explore: assigned_role
 
