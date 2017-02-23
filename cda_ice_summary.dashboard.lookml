@@ -160,7 +160,7 @@
       v_cdarecords.mics_boafcd, v_cdarecords.mics_boakcd, v_cdarecords.mics_swunn1,
       v_cdarecords.mics_a7ammd, v_cdarecords.mics_boabcd, v_cdarecords.mics_boexst,
       v_cdarecords.mics_a7abpr, v_cdarecords.mics_a7cens, v_cdarecords.mics_swjpmd,
-      v_cdarecords.mics_swjqmd, v_cdarecords.mics_swjrmd]
+      v_cdarecords.mics_swjqmd, v_cdarecords.mics_swjrmd, v_cdarecords.mics_bocfc2]
     listen:
       currency: v_cdarecords.currency
       expired: v_cdarecords.expired
