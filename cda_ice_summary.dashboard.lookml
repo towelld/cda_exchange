@@ -168,7 +168,7 @@
       feature_description: v_cdarecords.feature_description
       product_group: v_cdarecords.product_group
       rule_type: v_cdarecords.rule_type
-    sorts: [v_cdarecords.mics_boajcd]
+    sorts: [v_cdarecords.mics_boajcd, v_cdarecords.mics_boafcd, v_cdarecords.mics_boakcd, v_cdarecords.mics_swunn1]
     limit: '100'
     column_limit: '50'
     query_timezone: Europe/London
