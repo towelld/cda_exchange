@@ -3,9 +3,9 @@
   layout: grid
   rows:
     - elements: [cda_ice_rules]
-      height: 300
+      height: 250
     - elements: [cda_ice_features]
-      height: 300
+      height: 250
     - elements: [cda_ice_records]
       height: 400
   embed_style:
