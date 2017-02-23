@@ -57,7 +57,7 @@
 
   - name: cda_ice_rules
     title: Rules
-    type: looker_column
+    type: looker_bar
     model: cda_ice
     explore: cdasummary
     dimensions: [cdasummary.rule_order, cdasummary.rule_type]
