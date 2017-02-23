@@ -9,7 +9,12 @@
     - elements: [cda_ice_records]
       height: 500
 
-#  filters:
+  filters:
+  - name: currency
+    type: field_filter
+    model: cda_ice
+    explore: cdasummary
+    field: cdasummary.currency
 
   elements:
 
@@ -28,6 +33,8 @@
       cdasummary.feature_description: ''
       cdasummary.product_group: ''
       cdasummary.rule_type: ''
+    listen:
+      currency: cdasummary.currency
     sorts: [cdasummary.rule_order]
     limit: '500'
     column_limit: '50'
@@ -136,4 +143,3 @@
     hide_row_totals: false
     table_theme: gray
     limit_displayed_rows: false
-
