@@ -8,7 +8,7 @@ view: v_cdarecords {
 
   dimension: data_family {
     type: string
-    sql: ${TABLE}.currency ;;
+    sql: ${TABLE}.data_family ;;
   }
 
   dimension: expired {
