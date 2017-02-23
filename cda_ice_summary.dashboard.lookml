@@ -14,7 +14,7 @@
     title_color: "#df5555"
     show_filters_bar: true
     tile_background_color: "#ffffff"
-    tile_text_color: "#df5555"
+    tile_text_color: "#646569"
 
   filters:
   - name: currency
