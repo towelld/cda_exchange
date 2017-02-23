@@ -55,14 +55,6 @@
     explore: cdasummary
     dimensions: [cdasummary.rule_order, cdasummary.rule_type]
     measures: [cdasummary.sum_total, cdasummary.sum_fail]
-    filters:
-      cdasummary.currency: ''
-      cdasummary.data_family: ''
-      cdasummary.expired: ''
-      cdasummary.expiry: ''
-      cdasummary.feature_description: ''
-      cdasummary.product_group: ''
-      cdasummary.rule_type: ''
     listen:
       currency: cdasummary.currency
       data_family: cdasummary.data_family
