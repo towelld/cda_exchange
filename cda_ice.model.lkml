@@ -8,7 +8,7 @@ include: "*.dashboard"
 
 explore: cdasummary {}
 explore: v_cdarecords {}
-explore: data_elements_rules {}
+explore: v_cdarules {}
 
 # - explore: assigned_role
 
