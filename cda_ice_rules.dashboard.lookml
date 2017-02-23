@@ -3,7 +3,7 @@
   layout: grid
   rows:
   - elements: [cda_ice_business_rules]
-    height: 800
+    height: 1000
   embed_style:
     background_color: "#ffffff"
     show_title: true
@@ -13,16 +13,16 @@
     tile_text_color: "#646569"
 
   filters:
-  - name: feature_description
-    type: field_filter
-    model: cda_ice
-    explore: v_cdarules
-    field: v_cdarules.feature_description
   - name: rule_type
     type: field_filter
     model: cda_ice
     explore: v_cdarules
     field: v_cdarules.rule_type
+  - name: feature_description
+    type: field_filter
+    model: cda_ice
+    explore: v_cdarules
+    field: v_cdarules.feature_description
 
 
   elements:
@@ -34,8 +34,8 @@
     explore: v_cdarules
     dimensions: [v_cdarules.feature_description, v_cdarules.rule_type, v_cdarules.rule_description]
     listen:
-      feature_description: v_cdarules.feature_description
       rule_type: v_cdarules.rule_type
+      feature_description: v_cdarules.feature_description
     sorts: [v_cdarules.feature_description]
     limit: '500'
     column_limit: '50'
