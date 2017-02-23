@@ -35,6 +35,16 @@
     model: cda_ice
     explore: cdasummary
     field: cdasummary.feature_description
+  - name: product_group
+    type: field_filter
+    model: cda_ice
+    explore: cdasummary
+    field: cdasummary.product_group
+  - name: rule_type
+    type: field_filter
+    model: cda_ice
+    explore: cdasummary
+    field: cdasummary.rule_type
 
   elements:
 
@@ -55,6 +65,12 @@
       cdasummary.rule_type: ''
     listen:
       currency: cdasummary.currency
+      data_family: cdasummary.data_family
+      expired: cdasummary.expired
+      expiry: cdasummary.expiry
+      feature_description: cdasummary.feature_description
+      product_group: cdasummary.product_group
+      rule_type: cdasummary.rule_type
     sorts: [cdasummary.rule_order]
     limit: '500'
     column_limit: '50'
