@@ -21,277 +21,280 @@ view: v_cdarecords {
     sql: ${TABLE}.feature_description ;;
   }
 
-  dimension: mics_a7_a8_st {
+  dimension: mics_a7a8st {
     type: string
     sql: ${TABLE}.MICS_A7A8ST ;;
   }
 
-  dimension: mics_a7_a9_pc {
+  dimension: mics_a7a9pc {
     type: number
     sql: ${TABLE}.MICS_A7A9PC ;;
   }
 
-  dimension: mics_a7_a9_st {
+  dimension: mics_a7a9st {
     type: string
     sql: ${TABLE}.MICS_A7A9ST ;;
   }
 
-  dimension: mics_a7_abpr {
+  dimension: mics_a7abpr {
     type: number
     sql: ${TABLE}.MICS_A7ABPR ;;
+    label: "Exercise Price"
   }
 
-  dimension: mics_a7_acs2 {
+  dimension: mics_a7acs2 {
     type: string
     sql: ${TABLE}.MICS_A7ACS2 ;;
   }
 
-  dimension: mics_a7_adnb {
+  dimension: mics_a7adnb {
     type: number
     sql: ${TABLE}.MICS_A7ADNB ;;
   }
 
-  dimension: mics_a7_ads1 {
+  dimension: mics_a7ads1 {
     type: string
     sql: ${TABLE}.MICS_A7ADS1 ;;
   }
 
-  dimension: mics_a7_akpc {
+  dimension: mics_a7akpc {
     type: number
     sql: ${TABLE}.MICS_A7AKPC ;;
   }
 
-  dimension: mics_a7_ammd {
+  dimension: mics_a7ammd {
     type: string
     sql: ${TABLE}.MICS_A7AMMD ;;
+    label: "Expiry Date"
   }
 
-  dimension: mics_a7_atpc {
+  dimension: mics_a7atpc {
     type: number
     sql: ${TABLE}.MICS_A7ATPC ;;
   }
 
-  dimension: mics_a7_aupc {
+  dimension: mics_a7aupc {
     type: number
     sql: ${TABLE}.MICS_A7AUPC ;;
   }
 
-  dimension: mics_a7_azpc {
+  dimension: mics_a7azpc {
     type: number
     sql: ${TABLE}.MICS_A7AZPC ;;
   }
 
-  dimension: mics_a7_bast {
+  dimension: mics_a7bast {
     type: string
     sql: ${TABLE}.MICS_A7BAST ;;
   }
 
-  dimension: mics_a7_bbst {
+  dimension: mics_a7bbst {
     type: number
     sql: ${TABLE}.MICS_A7BBST ;;
   }
 
-  dimension: mics_a7_bopc {
+  dimension: mics_a7bopc {
     type: number
     sql: ${TABLE}.MICS_A7BOPC ;;
   }
 
-  dimension: mics_a7_bspc {
+  dimension: mics_a7bspc {
     type: number
     sql: ${TABLE}.MICS_A7BSPC ;;
   }
 
-  dimension: mics_a7_c9_md {
+  dimension: mics_a7c9md {
     type: number
     sql: ${TABLE}.MICS_A7C9MD ;;
   }
 
-  dimension: mics_a7_c9_tx {
+  dimension: mics_a7c9tx {
     type: string
     sql: ${TABLE}.MICS_A7C9TX ;;
   }
 
-  dimension: mics_a7_cens {
+  dimension: mics_a7cens {
     type: number
     sql: ${TABLE}.MICS_A7CENS ;;
+    label: "Conversion Price Factor"
   }
 
-  dimension: mics_a7_cfns {
+  dimension: mics_a7cfns {
     type: string
     sql: ${TABLE}.MICS_A7CFNS ;;
   }
 
-  dimension: mics_a7_cwss {
+  dimension: mics_a7cwss {
     type: string
     sql: ${TABLE}.MICS_A7CWSS ;;
   }
 
-  dimension: mics_a7_d9_cd {
+  dimension: mics_a7d9cd {
     type: string
     sql: ${TABLE}.MICS_A7D9CD ;;
   }
 
-  dimension: mics_a7_damd {
+  dimension: mics_a7damd {
     type: number
     sql: ${TABLE}.MICS_A7DAMD ;;
   }
 
-  dimension: mics_a7_dbmd {
+  dimension: mics_a7dbmd {
     type: number
     sql: ${TABLE}.MICS_A7DBMD ;;
   }
 
-  dimension: mics_a7_dcmd {
+  dimension: mics_a7dcmd {
     type: number
     sql: ${TABLE}.MICS_A7DCMD ;;
   }
 
-  dimension: mics_a7_f8_md {
+  dimension: mics_a7f8md {
     type: number
     sql: ${TABLE}.MICS_A7F8MD ;;
   }
 
-  dimension: mics_a7_fcmd {
+  dimension: mics_a7fcmd {
     type: number
     sql: ${TABLE}.MICS_A7FCMD ;;
   }
 
-  dimension: mics_a7_fest {
+  dimension: mics_a7fest {
     type: string
     sql: ${TABLE}.MICS_A7FEST ;;
   }
 
-  dimension: mics_a7_fhpr {
+  dimension: mics_a7fhpr {
     type: number
     sql: ${TABLE}.MICS_A7FHPR ;;
   }
 
-  dimension: mics_a7_g5_cd {
+  dimension: mics_a7g5_cd {
     type: string
     sql: ${TABLE}.MICS_A7G5CD ;;
   }
 
-  dimension: mics_a7_g8_cd {
+  dimension: mics_a7g8cd {
     type: string
     sql: ${TABLE}.MICS_A7G8CD ;;
   }
 
-  dimension: mics_a7_g9_cd {
+  dimension: mics_a7g9cd {
     type: string
     sql: ${TABLE}.MICS_A7G9CD ;;
   }
 
-  dimension: mics_a7_ggmd {
+  dimension: mics_a7ggmd {
     type: number
     sql: ${TABLE}.MICS_A7GGMD ;;
   }
 
-  dimension: mics_a7_hls1 {
+  dimension: mics_a7hls1 {
     type: string
     sql: ${TABLE}.MICS_A7HLS1 ;;
   }
 
-  dimension: mics_a7_j5_c2 {
+  dimension: mics_a7j5_c2 {
     type: string
     sql: ${TABLE}.MICS_A7J5C2 ;;
   }
 
-  dimension: mics_a7_jcpr {
+  dimension: mics_a7jcpr {
     type: number
     sql: ${TABLE}.MICS_A7JCPR ;;
   }
 
-  dimension: mics_a7_jdpr {
+  dimension: mics_a7jdpr {
     type: number
     sql: ${TABLE}.MICS_A7JDPR ;;
   }
 
-  dimension: mics_a7_jts3 {
+  dimension: mics_a7jts3 {
     type: string
     sql: ${TABLE}.MICS_A7JTS3 ;;
   }
 
-  dimension: mics_a7_kpn1 {
+  dimension: mics_a7kpn1 {
     type: number
     sql: ${TABLE}.MICS_A7KPN1 ;;
   }
 
-  dimension: mics_a7_l6_tt {
+  dimension: mics_a7l6_tt {
     type: string
     sql: ${TABLE}.MICS_A7L6TT ;;
   }
 
-  dimension: mics_a7_o3_ss {
+  dimension: mics_a7o3_ss {
     type: string
     sql: ${TABLE}.MICS_A7O3SS ;;
   }
 
-  dimension: mics_a7_psc1 {
+  dimension: mics_a7psc1 {
     type: string
     sql: ${TABLE}.MICS_A7PSC1 ;;
   }
 
-  dimension: mics_a7_pwnr {
+  dimension: mics_a7pwnr {
     type: number
     sql: ${TABLE}.MICS_A7PWNR ;;
   }
 
-  dimension: mics_a7_rbns {
+  dimension: mics_a7rbns {
     type: number
     sql: ${TABLE}.MICS_A7RBNS ;;
   }
 
-  dimension: mics_a7_rzss {
+  dimension: mics_a7rzss {
     type: string
     sql: ${TABLE}.MICS_A7RZSS ;;
   }
 
-  dimension: mics_a7_s6_cd {
+  dimension: mics_a7s6_cd {
     type: string
     sql: ${TABLE}.MICS_A7S6CD ;;
   }
 
-  dimension: mics_a7_t5_nb {
+  dimension: mics_a7t5_nb {
     type: number
     sql: ${TABLE}.MICS_A7T5NB ;;
   }
 
-  dimension: mics_a7_tast {
+  dimension: mics_a7tast {
     type: string
     sql: ${TABLE}.MICS_A7TAST ;;
   }
 
-  dimension: mics_a7_w0_st {
+  dimension: mics_a7w0_st {
     type: string
     sql: ${TABLE}.MICS_A7W0ST ;;
   }
 
-  dimension: mics_a7_wzst {
+  dimension: mics_a7wzst {
     type: string
     sql: ${TABLE}.MICS_A7WZST ;;
   }
 
-  dimension: mics_a7_xlst {
+  dimension: mics_a7xlst {
     type: string
     sql: ${TABLE}.MICS_A7XLST ;;
   }
 
-  dimension: mics_a7_xmst {
+  dimension: mics_a7xmst {
     type: string
     sql: ${TABLE}.MICS_A7XMST ;;
   }
 
-  dimension: mics_a7_y3_cd {
+  dimension: mics_a7y3_cd {
     type: string
     sql: ${TABLE}.MICS_A7Y3CD ;;
   }
 
-  dimension: mics_a7_ygcd {
+  dimension: mics_a7ygcd {
     type: string
     sql: ${TABLE}.MICS_A7YGCD ;;
   }
 
-  dimension: mics_a7_ysnb {
+  dimension: mics_a7ysnb {
     type: number
     sql: ${TABLE}.MICS_A7YSNB ;;
   }
@@ -326,17 +329,17 @@ view: v_cdarecords {
     sql: ${TABLE}.MICS_AIJ6S3_3 ;;
   }
 
-  dimension: mics_aix9_cd_1 {
+  dimension: mics_aix9cd_1 {
     type: string
     sql: ${TABLE}.MICS_AIX9CD_1 ;;
   }
 
-  dimension: mics_aix9_cd_2 {
+  dimension: mics_aix9cd_2 {
     type: string
     sql: ${TABLE}.MICS_AIX9CD_2 ;;
   }
 
-  dimension: mics_aix9_cd_3 {
+  dimension: mics_aix9cd_3 {
     type: string
     sql: ${TABLE}.MICS_AIX9CD_3 ;;
   }
@@ -344,6 +347,7 @@ view: v_cdarecords {
   dimension: mics_boabcd {
     type: string
     sql: ${TABLE}.MICS_BOABCD ;;
+    label: "Currency"
   }
 
   dimension: mics_boacmd {
@@ -354,16 +358,19 @@ view: v_cdarecords {
   dimension: mics_boafcd {
     type: string
     sql: ${TABLE}.MICS_BOAFCD ;;
+    label: "Exchange Code"
   }
 
   dimension: mics_boajcd {
     type: string
     sql: ${TABLE}.MICS_BOAJCD ;;
+    label: "Product Group Code"
   }
 
   dimension: mics_boakcd {
     type: string
     sql: ${TABLE}.MICS_BOAKCD ;;
+    label: "Symbol"
   }
 
   dimension: mics_boakts {
@@ -444,6 +451,7 @@ view: v_cdarecords {
   dimension: mics_boexst {
     type: string
     sql: ${TABLE}.MICS_BOEXST ;;
+    label: "Cash Settle Ind"
   }
 
   dimension: mics_bogkst {
@@ -556,7 +564,7 @@ view: v_cdarecords {
     sql: ${TABLE}.MICS_BOPXNR ;;
   }
 
-  dimension: mics_boy7_ss {
+  dimension: mics_boy7ss {
     type: string
     sql: ${TABLE}.MICS_BOY7SS ;;
   }
@@ -616,12 +624,12 @@ view: v_cdarecords {
     sql: ${TABLE}.MICS_LOQ5NS ;;
   }
 
-  dimension: mics_loq7_ns {
+  dimension: mics_loq7ns {
     type: number
     sql: ${TABLE}.MICS_LOQ7NS ;;
   }
 
-  dimension: mics_loq8_ns {
+  dimension: mics_loq8ns {
     type: number
     sql: ${TABLE}.MICS_LOQ8NS ;;
   }
@@ -629,16 +637,19 @@ view: v_cdarecords {
   dimension: mics_swjpmd {
     type: string
     sql: ${TABLE}.MICS_SWJPMD ;;
+    label: "Last Trading Date"
   }
 
   dimension: mics_swjqmd {
     type: string
     sql: ${TABLE}.MICS_SWJQMD ;;
+    label: "First Notice Date"
   }
 
   dimension: mics_swjrmd {
     type: string
     sql: ${TABLE}.MICS_SWJRMD ;;
+    label: "last Notice Date"
   }
 
   dimension: mics_swjsmd {
@@ -664,6 +675,7 @@ view: v_cdarecords {
   dimension: mics_swunn1 {
     type: string
     sql: ${TABLE}.MICS_SWUNN1 ;;
+    label: "Contract Year/Month"
   }
 
   dimension: product_group {
