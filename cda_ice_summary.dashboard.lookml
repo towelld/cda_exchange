@@ -3,11 +3,11 @@
   layout: grid
   rows:
     - elements: [cda_ice_rules]
-      height: 400
+      height: 200
     - elements: [cda_ice_features]
-      height: 400
+      height: 200
     - elements: [cda_ice_records]
-      height: 600
+      height: 300
   embed_style:
     background_color: "#ffffff"
     show_title: true
