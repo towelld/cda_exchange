@@ -111,6 +111,8 @@
     explore: cdasummary
     dimensions: [cdasummary.feature_description]
     measures: [cdasummary.sum_total, cdasummary.sum_fail]
+    filters:
+      cdasummary.sum_fail: '>0'
     listen:
       currency: cdasummary.currency
       data_family: cdasummary.data_family
