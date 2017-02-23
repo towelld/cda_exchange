@@ -165,6 +165,7 @@
       currency: v_cdarecords.currency
       expired: v_cdarecords.expired
       expiry: v_cdarecords.expiry
+      feature_description: v_cdarecords.feature_description
       product_group: v_cdarecords.product_group
       rule_type: v_cdarecords.rule_type
     sorts: [v_cdarecords.mics_boajcd]
