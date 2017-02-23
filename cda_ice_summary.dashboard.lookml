@@ -163,13 +163,14 @@
     type: table
     model: cda_ice
     explore: v_cdarecords
-    dimensions: [v_cdarecords.feature_description, v_cdarecords.rule_type, v_cdarecords.mics_boajcd,
+    dimensions: [v_cdarecords.data_family,v_cdarecords.feature_description, v_cdarecords.rule_type, v_cdarecords.mics_boajcd,
       v_cdarecords.mics_boafcd, v_cdarecords.mics_boakcd, v_cdarecords.mics_swunn1,
       v_cdarecords.mics_a7ammd, v_cdarecords.mics_boabcd, v_cdarecords.mics_boexst,
       v_cdarecords.mics_a7abpr, v_cdarecords.mics_a7cens, v_cdarecords.mics_swjpmd,
       v_cdarecords.mics_swjqmd, v_cdarecords.mics_swjrmd, v_cdarecords.mics_bocfc2]
     listen:
       currency: v_cdarecords.currency
+      data_family: v_cdarecords.data_family
       expired: v_cdarecords.expired
       expiry: v_cdarecords.expiry
       feature_description: v_cdarecords.feature_description
