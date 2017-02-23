@@ -27,11 +27,13 @@
     model: cda_ice
     explore: cdasummary
     field: cdasummary.data_family
+    default_value: "[ALL]"
   - name: expired
     type: field_filter
     model: cda_ice
     explore: cdasummary
     field: cdasummary.expired
+    default_value: "No"
   - name: expiry
     type: field_filter
     model: cda_ice
