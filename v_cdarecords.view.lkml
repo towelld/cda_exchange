@@ -386,6 +386,7 @@ view: v_cdarecords {
   dimension: mics_bocfc2 {
     type: string
     sql: ${TABLE}.MICS_BOCFC2 ;;
+    label: "ULV Trading Type Code"
   }
 
   dimension: mics_bocjns {
@@ -649,7 +650,7 @@ view: v_cdarecords {
   dimension: mics_swjrmd {
     type: string
     sql: ${TABLE}.MICS_SWJRMD ;;
-    label: "last Notice Date"
+    label: "Last Notice Date"
   }
 
   dimension: mics_swjsmd {
