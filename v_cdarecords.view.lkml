@@ -6,6 +6,11 @@ view: v_cdarecords {
     sql: ${TABLE}.currency ;;
   }
 
+  dimension: data_family {
+    type: string
+    sql: ${TABLE}.currency ;;
+  }
+
   dimension: expired {
     type: string
     sql: ${TABLE}.expired ;;
