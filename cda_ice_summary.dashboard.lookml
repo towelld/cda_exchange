@@ -104,14 +104,14 @@
     explore: cdasummary
     dimensions: [cdasummary.feature_description]
     measures: [cdasummary.sum_total, cdasummary.sum_fail]
-    filters:
-      cdasummary.currency: ''
-      cdasummary.data_family: ''
-      cdasummary.expired: ''
-      cdasummary.expiry: ''
-      cdasummary.feature_description: ''
-      cdasummary.product_group: ''
-      cdasummary.rule_type: ''
+    listen:
+      currency: cdasummary.currency
+      data_family: cdasummary.data_family
+      expired: cdasummary.expired
+      expiry: cdasummary.expiry
+      feature_description: cdasummary.feature_description
+      product_group: cdasummary.product_group
+      rule_type: cdasummary.rule_type
     sorts: [cdasummary.feature_description]
     limit: '500'
     column_limit: '50'
@@ -154,12 +154,12 @@
       v_cdarecords.mics_a7ammd, v_cdarecords.mics_boabcd, v_cdarecords.mics_boexst,
       v_cdarecords.mics_a7abpr, v_cdarecords.mics_a7cens, v_cdarecords.mics_swjpmd,
       v_cdarecords.mics_swjqmd, v_cdarecords.mics_swjrmd]
-    filters:
-      v_cdarecords.currency: ''
-      v_cdarecords.expired: ''
-      v_cdarecords.expiry: ''
-      v_cdarecords.product_group: ''
-      v_cdarecords.rule_type: ''
+    listen:
+      currency: v_cdarecords.currency
+      expired: v_cdarecords.expired
+      expiry: v_cdarecords.expiry
+      product_group: v_cdarecords.product_group
+      rule_type: v_cdarecords.rule_type
     sorts: [v_cdarecords.mics_boajcd]
     limit: '100'
     column_limit: '50'
