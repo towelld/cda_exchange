@@ -347,7 +347,7 @@ view: v_cdarecords {
   dimension: mics_boabcd {
     type: string
     sql: ${TABLE}.MICS_BOABCD ;;
-    label: "Currency"
+    label: "Currency Code"
   }
 
   dimension: mics_boacmd {
