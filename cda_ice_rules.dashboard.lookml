@@ -18,6 +18,11 @@
     model: cda_ice
     explore: v_cdarules
     field: v_cdarules.feature_description
+  - name: rule_type
+    type: field_filter
+    model: cda_ice
+    explore: v_cdarules
+    field: v_cdarules.rule_type
 
 
   elements:
@@ -30,6 +35,7 @@
     dimensions: [v_cdarules.feature_description, v_cdarules.rule_type, v_cdarules.rule_description]
     listen:
       feature_description: v_cdarules.feature_description
+      rule_type: v_cdarules.rule_type
     sorts: [v_cdarules.feature_description]
     limit: '500'
     column_limit: '50'
