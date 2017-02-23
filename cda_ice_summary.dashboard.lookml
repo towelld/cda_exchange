@@ -103,6 +103,9 @@
     hide_legend: true
     label_color: ['#55565a']
     label_value_format: 0.00%
+    y_axis_min: ['0.50']
+    y_axis_max: ['1']
+
 
   - name: cda_ice_features
     title: Features
@@ -152,6 +155,8 @@
       cdasummary.sum_fail: '#df5555'
     hide_legend: true
     column_group_spacing_ratio: 0.3
+    y_axis_min: ['0.50']
+    y_axis_max: ['1']
 
   - name: cda_ice_records
     title: Records
