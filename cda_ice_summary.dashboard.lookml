@@ -156,7 +156,7 @@
     type: table
     model: cda_ice
     explore: v_cdarecords
-    dimensions: [v_cdarecords.rule_type, v_cdarecords.feature_description, v_cdarecords.mics_boajcd,
+    dimensions: [v_cdarecords.rule_type, v_cdarecords.mics_boajcd,
       v_cdarecords.mics_boafcd, v_cdarecords.mics_boakcd, v_cdarecords.mics_swunn1,
       v_cdarecords.mics_a7ammd, v_cdarecords.mics_boabcd, v_cdarecords.mics_boexst,
       v_cdarecords.mics_a7abpr, v_cdarecords.mics_a7cens, v_cdarecords.mics_swjpmd,
