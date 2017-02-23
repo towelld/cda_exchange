@@ -13,8 +13,8 @@
     show_title: true
     title_color: "#df5555"
     show_filters_bar: true
-    tile_background_color: "#000000"
-    tile_text_color: "#ffff00"
+    tile_background_color: "#ffffff"
+    tile_text_color: "#df5555"
 
   filters:
   - name: currency
