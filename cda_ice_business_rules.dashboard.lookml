@@ -33,6 +33,8 @@
     title: Business Rules
     top: 0
     left: 0
+    width: 10000
+    height: 10000
     type: table
     model: cda_ice
     explore: data_elements_rules
