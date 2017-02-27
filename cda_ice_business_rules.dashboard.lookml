@@ -16,6 +16,7 @@
     model: cda_ice
     explore: data_elements
     field: data_elements.feature_name
+    default_value: -EMPTY
   - name: rule_type
     type: field_filter
     model: cda_ice
