@@ -1,7 +1,8 @@
 - dashboard: cda_ice_business_rules
   title: Cda Ice Business Rules
-  layout: tile
-  tile_size: 100
+  layout: grid
+  rows:
+  - elements: [cda_ice_business_rules]
 
   filters:
   - name: feature_description
