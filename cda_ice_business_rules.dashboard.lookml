@@ -1,9 +1,6 @@
 - dashboard: cda_ice_business_rules
   title: CDA ICE Business Rules
-  layout: grid
-  rows:
-  - elements: [cda_ice_business_rules]
-    height: 1000
+  layout: static
   embed_style:
     background_color: "#ffffff"
     show_title: true
@@ -34,6 +31,8 @@
 
   - name: cda_ice_business_rules
     title: Business Rules
+    top: 0
+    left: 0
     type: table
     model: cda_ice
     explore: data_elements_rules
