@@ -13,6 +13,11 @@
     tile_text_color: "#646569"
 
   filters:
+  - name: rule_type
+    type: field_filter
+    model: cda_ice
+    explore: data_elements_rule_types
+    field: data_elements_rule_types.rule_type
   - name: feature_description
     type: field_filter
     model: cda_ice
@@ -24,11 +29,6 @@
     explore: data_elements
     field: data_elements.feature_name
     default_value: -EMPTY
-  - name: rule_type
-    type: field_filter
-    model: cda_ice
-    explore: data_elements_rule_types
-    field: data_elements_rule_types.rule_type
 
   elements:
 
@@ -39,9 +39,9 @@
     explore: data_elements_rules
     dimensions: [data_elements.feature_name, data_elements.feature_description, data_elements_rule_types.rule_type, data_elements_rules.rule_description]
     listen:
+      rule_type: data_elements_rule_types.rule_type
       feature_description: data_elements.feature_description
       feature_name: data_elements.feature_name
-      rule_type: data_elements_rule_types.rule_type
     sorts: [data_elements.feature_name]
     limit: '500'
     column_limit: '50'
