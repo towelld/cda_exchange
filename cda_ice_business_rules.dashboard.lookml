@@ -4,6 +4,13 @@
   rows:
   - elements: [cda_ice_business_rules]
     height: 1000
+  embed_style:
+    background_color: "#ffffff"
+    show_title: true
+    title_color: "#df5555"
+    show_filters_bar: true
+    tile_background_color: "#ffffff"
+    tile_text_color: "#646569"
 
   filters:
   - name: feature_description
