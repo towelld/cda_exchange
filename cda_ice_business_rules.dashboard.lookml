@@ -1,8 +1,9 @@
 - dashboard: cda_ice_business_rules
-  title: Cda Ice Business Rules
+  title: CDA ICE Business Rules
   layout: grid
   rows:
   - elements: [cda_ice_business_rules]
+    height: 1000
 
   filters:
   - name: feature_description
