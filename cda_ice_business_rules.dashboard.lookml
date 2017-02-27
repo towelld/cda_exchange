@@ -31,8 +31,8 @@
 
   - name: cda_ice_business_rules
     title: Business Rules
-    top: 0
-    left: 0
+    top: 1
+    left: 1
     width: 10000
     height: 10000
     type: table
