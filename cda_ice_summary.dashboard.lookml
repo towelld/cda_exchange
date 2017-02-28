@@ -59,7 +59,6 @@
     model: cda_ice
     explore: cdasummary
     field: cdasummary.fail_count
-    default_value: 0
 
   elements:
 
