@@ -58,6 +58,10 @@ view: cdasummary {
   dimension: rule_type {
     type: string
     sql: ${TABLE}.rule_type ;;
+    link: {
+      label: "Business Rules"
+      url: "/embed/dashboards/cda_ice::cda_ice_business_rules?&rule_type={{ value }}"
+    }
   }
 
   dimension: total_count {
