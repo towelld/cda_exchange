@@ -24,6 +24,10 @@ view: v_cdarecords {
   dimension: feature_description {
     type: string
     sql: ${TABLE}.feature_description ;;
+    link: {
+      label: "Business Rules"
+      url: "/embed/dashboards/cda_ice::cda_ice_business_rules?&feature_description={{ value }}"
+    }
   }
 
   dimension: mics_a7a8st {
