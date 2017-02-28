@@ -1,5 +1,5 @@
 - dashboard: cda_ice_data_dictionary
-  title: CDA ICE Data Dictionary
+  title: ICE Data Dictionary
   layout: grid
   rows:
     - elements: [cda_ice_data_dictionary]

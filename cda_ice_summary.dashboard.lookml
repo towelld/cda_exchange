@@ -1,5 +1,5 @@
 - dashboard: cda_ice_summary
-  title: CDA ICE Summary
+  title: ICE Summary
   layout: grid
   rows:
     - elements: [cda_ice_rules]

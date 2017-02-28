@@ -1,5 +1,5 @@
 - dashboard: cda_ice_tolerances
-  title: CDA ICE Tolerances
+  title: ICE Tolerances
   layout: grid
   tile_size: 100
   rows:

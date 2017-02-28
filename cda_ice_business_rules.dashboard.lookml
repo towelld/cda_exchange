@@ -1,5 +1,5 @@
 - dashboard: cda_ice_business_rules
-  title: CDA ICE Business Rules
+  title: ICE Business Rules
   layout: grid
   rows:
     - elements: [cda_ice_business_rules]

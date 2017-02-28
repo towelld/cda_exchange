@@ -1,8 +1,8 @@
 - dashboard: cda_ice_highlights
-  title: CDA ICE Highlights
+  title: ICE Highlights
   layout: grid
   rows:
-    - elements: [cda_ice_highlights]
+    - elements: [cda_ice_highlights_complete]
       height: 1000
   embed_style:
     background_color: "#ffffff"
@@ -14,8 +14,8 @@
 
   elements:
 
-  - name: cda_ice_highlights
-    title: Highlights
+  - name: cda_ice_highlights_complete
+    title: Complete
     type: looker_pie
     model: cda_ice
     explore: v_cdahighlights
