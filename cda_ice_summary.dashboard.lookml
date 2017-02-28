@@ -54,11 +54,6 @@
     model: cda_ice
     explore: cdasummary
     field: cdasummary.rule_type
-  - name: fail_count
-    type: field_filter
-    model: cda_ice
-    explore: cdasummary
-    field: cdasummary.fail_count
 
   elements:
 
@@ -77,7 +72,6 @@
       feature_description: cdasummary.feature_description
       product_group: cdasummary.product_group
       rule_type: cdasummary.rule_type
-      fail_count: cdasummary.fail_count
     sorts: [cdasummary.rule_order]
     limit: '500'
     column_limit: '50'
@@ -132,7 +126,6 @@
       feature_description: cdasummary.feature_description
       product_group: cdasummary.product_group
       rule_type: cdasummary.rule_type
-      fail_count: cdasummary.fail_count
     sorts: [cdasummary.feature_description]
     limit: '500'
     column_limit: '50'
