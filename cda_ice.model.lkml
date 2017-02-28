@@ -8,6 +8,7 @@ include: "*.dashboard"
 
 explore: cdasummary {}
 explore: v_cdarecords {}
+explore: v_cdahighlights {}
 
 explore: data_elements {}
 explore: data_elements_rule_types {}
