@@ -132,6 +132,7 @@
       feature_description: cdasummary.feature_description
       product_group: cdasummary.product_group
       rule_type: cdasummary.rule_type
+      fail_count: cdasummary.fail_count
     sorts: [cdasummary.feature_description]
     limit: '500'
     column_limit: '50'
