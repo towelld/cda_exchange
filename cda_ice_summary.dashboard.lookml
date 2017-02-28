@@ -101,7 +101,7 @@
     hidden_fields: [cdasummary.rule_order]
     series_colors:
       cdasummary.sum_fail: '#df5555'
-      cdasummary.sum_total: '#55565a'
+      cdasummary.sum_total: '#92c26e'
     hide_legend: true
     label_color: ['#55565a']
     label_value_format: 0.00%
