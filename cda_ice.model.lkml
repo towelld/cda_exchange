@@ -30,6 +30,14 @@ explore: data_tolerances {
   }
 }
 
+explore: data_elements_detail {
+  join: data_elements {
+    sql_on: ${data_elements.element_id} = ${data_elements_detail.element_id} ;;
+    relationship: one_to_one
+  }
+}
+
+
 
 # - explore: assigned_role
 
@@ -46,9 +54,6 @@ explore: data_tolerances {
 # - explore: comment_record_link
 
 # - explore: comments
-
-# - explore: data_elements_detail
-
 
 # - explore: data_families
 
