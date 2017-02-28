@@ -26,7 +26,7 @@ view: v_cdahighlights {
     drill_fields: []
   }
 
-  measure: count_rag {
+  measure: sum_rag {
     type: sum
     sql: ${rag_count};;
   }
