@@ -1,8 +1,8 @@
 - dashboard: cda_ice_summary
   title: ICE Summary
   layout: static
-  width: 2520
-  tile_size: 60
+  width: 2100
+  tile_size: 50
   auto_run: true
   embed_style:
     background_color: "#ffffff"
@@ -103,7 +103,7 @@
 
   - name: cda_ice_timely
     title: Timely
-    left: 1
+    left: 7
     top: 0
     height: 1
     width: 6
@@ -150,7 +150,7 @@
 
   - name: cda_ice_accurate
     title: Accurate
-    left: 2
+    left: 13
     top: 0
     height: 1
     width: 6
@@ -197,7 +197,7 @@
 
   - name: cda_ice_conform
     title: Conform
-    left: 3
+    left: 19
     top: 0
     height: 1
     width: 6
@@ -244,7 +244,7 @@
 
   - name: cda_ice_valid
     title: Valid
-    left: 4
+    left: 25
     top: 0
     height: 1
     width: 6
@@ -291,7 +291,7 @@
 
   - name: cda_ice_consistent
     title: Consistent
-    left: 5
+    left: 31
     top: 0
     height: 1
     width: 6
@@ -338,7 +338,7 @@
 
   - name: cda_ice_unique
     title: Unique
-    left: 6
+    left: 37
     top: 0
     height: 1
     width: 6
