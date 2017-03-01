@@ -110,8 +110,14 @@
     explore: v_cdahighlights
     dimensions: [v_cdahighlights.rag]
     measures: [v_cdahighlights.sum_rag]
-    filters:
-      v_cdahighlights.rule_type: Timely
+    listen:
+      currency: v_cdahighlights.currency
+      data_family: v_cdahighlights.data_family
+      expired: v_cdahighlights.expired
+      expiry: v_cdahighlights.expiry
+      feature_description: v_cdahighlights.feature_description
+      product_group: v_cdahighlights.product_group
+      rule_type: v_cdahighlights.rule_type
     sorts: [v_cdahighlights.rag desc]
     limit: '500'
     column_limit: '50'
