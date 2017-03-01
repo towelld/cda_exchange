@@ -1,8 +1,8 @@
 - dashboard: cda_ice_summary
   title: ICE Summary
   layout: static
-  width: 2200
-  tile_size: 100
+  width: 2100
+  tile_size: 300
   auto_run: true
   embed_style:
     background_color: "#ffffff"
@@ -59,7 +59,7 @@
     left: 0
     top: 0
     height: 1
-    width: 4
+    width: 1
     type: single_value
     model: cda_ice
     explore: v_cdahighlights
@@ -72,6 +72,53 @@
     query_timezone: Europe/London
     custom_color_enabled: true
     custom_color: '#fa8d29'
+    show_single_value_title: false
+    show_comparison: false
+    comparison_type: value
+    comparison_reverse_colors: false
+    show_comparison_label: true
+    stacking: ''
+    show_value_labels: false
+    label_density: 25
+    legend_position: center
+    x_axis_gridlines: false
+    y_axis_gridlines: true
+    show_view_names: true
+    limit_displayed_rows: false
+    y_axis_combined: true
+    show_y_axis_labels: true
+    show_y_axis_ticks: true
+    y_axis_tick_density: default
+    y_axis_tick_density_custom: 5
+    show_x_axis_label: true
+    show_x_axis_ticks: true
+    x_axis_scale: auto
+    y_axis_scale_mode: linear
+    ordering: none
+    show_null_labels: false
+    show_totals_labels: false
+    show_silhouette: false
+    totals_color: '#808080'
+    series_types: {}
+
+  - name: cda_ice_timely
+    title: Timely
+    left: 1
+    top: 0
+    height: 1
+    width: 1
+    type: single_value
+    model: cda_ice
+    explore: v_cdahighlights
+    dimensions: [v_cdahighlights.rule_type]
+    filters:
+      v_cdahighlights.rule_type: Timely
+    sorts: [v_cdahighlights.rule_type]
+    limit: '500'
+    column_limit: '50'
+    query_timezone: Europe/London
+    custom_color_enabled: true
+    custom_color: '#646569'
     show_single_value_title: false
     show_comparison: false
     comparison_type: value
