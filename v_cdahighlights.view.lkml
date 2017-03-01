@@ -53,6 +53,11 @@ view: v_cdahighlights {
     sql: ${TABLE}.rule_type ;;
   }
 
+  dimension: rule_type_filter {
+    type: string
+    sql: ${TABLE}.rule_type_filter ;;
+  }
+
   measure: count {
     type: count
     drill_fields: []
