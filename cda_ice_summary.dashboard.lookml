@@ -64,8 +64,8 @@
     explore: v_cdahighlights
     dimensions: [v_cdahighlights.rag]
     measures: [v_cdahighlights.sum_rag]
-    filters:
-      v_cdahighlights.rule_type: Complete
+    listen:
+      rule_type: v_cdahighlights.rule_type
     sorts: [v_cdahighlights.rag desc]
     limit: '500'
     column_limit: '50'
@@ -93,8 +93,6 @@
     show_null_labels: false
     show_totals_labels: false
     show_silhouette: false
-    totals_color: '#fa8d29'
-    title_color: '#fa8d29'
     series_types: {}
     series_colors:
       RED: '#df5555'
@@ -141,7 +139,6 @@
     show_null_labels: false
     show_totals_labels: false
     show_silhouette: false
-    totals_color: '#808080'
     series_types: {}
     series_colors:
       RED: '#df5555'
@@ -188,7 +185,6 @@
     show_null_labels: false
     show_totals_labels: false
     show_silhouette: false
-    totals_color: '#646569'
     series_types: {}
     series_colors:
       RED: '#df5555'
@@ -235,7 +231,6 @@
     show_null_labels: false
     show_totals_labels: false
     show_silhouette: false
-    totals_color: '#808080'
     series_types: {}
     series_colors:
       RED: '#df5555'
@@ -282,7 +277,6 @@
     show_null_labels: false
     show_totals_labels: false
     show_silhouette: false
-    totals_color: '#808080'
     series_types: {}
     series_colors:
       RED: '#df5555'
@@ -329,7 +323,6 @@
     show_null_labels: false
     show_totals_labels: false
     show_silhouette: false
-    totals_color: '#808080'
     series_types: {}
     series_colors:
       RED: '#df5555'
@@ -376,7 +369,6 @@
     show_null_labels: false
     show_totals_labels: false
     show_silhouette: false
-    totals_color: '#808080'
     series_types: {}
     series_colors:
       RED: '#df5555'
