@@ -423,7 +423,7 @@
     show_null_labels: false
     show_totals_labels: false
     show_silhouette: false
-    totals_color: '#808080'
+    totals_color: '#fa8d29'
     series_types: {}
     series_colors:
       RED: '#df5555'
@@ -478,6 +478,7 @@
       AMBER: '#eaa153'
 
   - name: cda_ice_highlights_accurate
+    title: Accurate
     left: 13
     top: 1
     height: 6
