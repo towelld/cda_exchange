@@ -433,7 +433,7 @@
   - name: cda_ice_records
     title: Records
     left: 0
-    top: 16
+    top: 15
     height: 9
     width: 42
     type: table
