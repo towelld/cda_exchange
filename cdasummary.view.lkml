@@ -1,5 +1,7 @@
 view: cdasummary {
   sql_table_name: AbnMicsiceproductdq.CDASummary ;;
+  label: ""
+  view_label: ""
 
   dimension: currency {
     type: string
