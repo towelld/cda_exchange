@@ -387,7 +387,7 @@
     title: Features
     left: 0
     top: 6
-    height: 6
+    height: 9
     width: 42
     type: looker_column
     model: cda_ice
@@ -441,8 +441,8 @@
   - name: cda_ice_records
     title: Records
     left: 0
-    top: 12
-    height: 8
+    top: 16
+    height: 9
     width: 42
     type: table
     model: cda_ice
