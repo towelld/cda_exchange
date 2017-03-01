@@ -53,340 +53,10 @@
 
   elements:
 
-
-  - name: cda_ice_complete
-    title: Complete
-    left: 0
-    top: 0
-    height: 1
-    width: 6
-    type: single_value
-    model: cda_ice
-    explore: v_cdahighlights
-    dimensions: [v_cdahighlights.rule_type]
-    filters:
-      v_cdahighlights.rule_type: Complete
-    sorts: [v_cdahighlights.rule_type]
-    limit: '500'
-    column_limit: '50'
-    query_timezone: Europe/London
-    custom_color_enabled: true
-    custom_color: '#fa8d29'
-    show_single_value_title: false
-    show_comparison: false
-    comparison_type: value
-    comparison_reverse_colors: false
-    show_comparison_label: true
-    stacking: ''
-    show_value_labels: false
-    label_density: 25
-    legend_position: center
-    x_axis_gridlines: false
-    y_axis_gridlines: true
-    show_view_names: true
-    limit_displayed_rows: false
-    y_axis_combined: true
-    show_y_axis_labels: true
-    show_y_axis_ticks: true
-    y_axis_tick_density: default
-    y_axis_tick_density_custom: 5
-    show_x_axis_label: true
-    show_x_axis_ticks: true
-    x_axis_scale: auto
-    y_axis_scale_mode: linear
-    ordering: none
-    show_null_labels: false
-    show_totals_labels: false
-    show_silhouette: false
-    totals_color: '#808080'
-    series_types: {}
-
-  - name: cda_ice_timely
-    title: Timely
-    left: 7
-    top: 0
-    height: 1
-    width: 6
-    type: single_value
-    model: cda_ice
-    explore: v_cdahighlights
-    dimensions: [v_cdahighlights.rule_type]
-    filters:
-      v_cdahighlights.rule_type: Timely
-    sorts: [v_cdahighlights.rule_type]
-    limit: '500'
-    column_limit: '50'
-    query_timezone: Europe/London
-    custom_color_enabled: true
-    custom_color: '#646569'
-    show_single_value_title: false
-    show_comparison: false
-    comparison_type: value
-    comparison_reverse_colors: false
-    show_comparison_label: true
-    stacking: ''
-    show_value_labels: false
-    label_density: 25
-    legend_position: center
-    x_axis_gridlines: false
-    y_axis_gridlines: true
-    show_view_names: true
-    limit_displayed_rows: false
-    y_axis_combined: true
-    show_y_axis_labels: true
-    show_y_axis_ticks: true
-    y_axis_tick_density: default
-    y_axis_tick_density_custom: 5
-    show_x_axis_label: true
-    show_x_axis_ticks: true
-    x_axis_scale: auto
-    y_axis_scale_mode: linear
-    ordering: none
-    show_null_labels: false
-    show_totals_labels: false
-    show_silhouette: false
-    totals_color: '#808080'
-    series_types: {}
-
-  - name: cda_ice_accurate
-    title: Accurate
-    left: 13
-    top: 0
-    height: 1
-    width: 6
-    type: single_value
-    model: cda_ice
-    explore: v_cdahighlights
-    dimensions: [v_cdahighlights.rule_type]
-    filters:
-      v_cdahighlights.rule_type: Accurate
-    sorts: [v_cdahighlights.rule_type]
-    limit: '500'
-    column_limit: '50'
-    query_timezone: Europe/London
-    custom_color_enabled: true
-    custom_color: '#5e8ab4'
-    show_single_value_title: false
-    show_comparison: false
-    comparison_type: value
-    comparison_reverse_colors: false
-    show_comparison_label: true
-    stacking: ''
-    show_value_labels: false
-    label_density: 25
-    legend_position: center
-    x_axis_gridlines: false
-    y_axis_gridlines: true
-    show_view_names: true
-    limit_displayed_rows: false
-    y_axis_combined: true
-    show_y_axis_labels: true
-    show_y_axis_ticks: true
-    y_axis_tick_density: default
-    y_axis_tick_density_custom: 5
-    show_x_axis_label: true
-    show_x_axis_ticks: true
-    x_axis_scale: auto
-    y_axis_scale_mode: linear
-    ordering: none
-    show_null_labels: false
-    show_totals_labels: false
-    show_silhouette: false
-    totals_color: '#808080'
-    series_types: {}
-
-  - name: cda_ice_conform
-    title: Conform
-    left: 19
-    top: 0
-    height: 1
-    width: 6
-    type: single_value
-    model: cda_ice
-    explore: v_cdahighlights
-    dimensions: [v_cdahighlights.rule_type]
-    filters:
-      v_cdahighlights.rule_type: Conform
-    sorts: [v_cdahighlights.rule_type]
-    limit: '500'
-    column_limit: '50'
-    query_timezone: Europe/London
-    custom_color_enabled: true
-    custom_color: '#a9a8a9'
-    show_single_value_title: false
-    show_comparison: false
-    comparison_type: value
-    comparison_reverse_colors: false
-    show_comparison_label: true
-    stacking: ''
-    show_value_labels: false
-    label_density: 25
-    legend_position: center
-    x_axis_gridlines: false
-    y_axis_gridlines: true
-    show_view_names: true
-    limit_displayed_rows: false
-    y_axis_combined: true
-    show_y_axis_labels: true
-    show_y_axis_ticks: true
-    y_axis_tick_density: default
-    y_axis_tick_density_custom: 5
-    show_x_axis_label: true
-    show_x_axis_ticks: true
-    x_axis_scale: auto
-    y_axis_scale_mode: linear
-    ordering: none
-    show_null_labels: false
-    show_totals_labels: false
-    show_silhouette: false
-    totals_color: '#808080'
-    series_types: {}
-
-  - name: cda_ice_valid
-    title: Valid
-    left: 25
-    top: 0
-    height: 1
-    width: 6
-    type: single_value
-    model: cda_ice
-    explore: v_cdahighlights
-    dimensions: [v_cdahighlights.rule_type]
-    filters:
-      v_cdahighlights.rule_type: Valid
-    sorts: [v_cdahighlights.rule_type]
-    limit: '500'
-    column_limit: '50'
-    query_timezone: Europe/London
-    custom_color_enabled: true
-    custom_color: '#0c9e9e'
-    show_single_value_title: false
-    show_comparison: false
-    comparison_type: value
-    comparison_reverse_colors: false
-    show_comparison_label: true
-    stacking: ''
-    show_value_labels: false
-    label_density: 25
-    legend_position: center
-    x_axis_gridlines: false
-    y_axis_gridlines: true
-    show_view_names: true
-    limit_displayed_rows: false
-    y_axis_combined: true
-    show_y_axis_labels: true
-    show_y_axis_ticks: true
-    y_axis_tick_density: default
-    y_axis_tick_density_custom: 5
-    show_x_axis_label: true
-    show_x_axis_ticks: true
-    x_axis_scale: auto
-    y_axis_scale_mode: linear
-    ordering: none
-    show_null_labels: false
-    show_totals_labels: false
-    show_silhouette: false
-    totals_color: '#808080'
-    series_types: {}
-
-  - name: cda_ice_consistent
-    title: Consistent
-    left: 31
-    top: 0
-    height: 1
-    width: 6
-    type: single_value
-    model: cda_ice
-    explore: v_cdahighlights
-    dimensions: [v_cdahighlights.rule_type]
-    filters:
-      v_cdahighlights.rule_type: Consistent
-    sorts: [v_cdahighlights.rule_type]
-    limit: '500'
-    column_limit: '50'
-    query_timezone: Europe/London
-    custom_color_enabled: true
-    custom_color: '#b34c59'
-    show_single_value_title: false
-    show_comparison: false
-    comparison_type: value
-    comparison_reverse_colors: false
-    show_comparison_label: true
-    stacking: ''
-    show_value_labels: false
-    label_density: 25
-    legend_position: center
-    x_axis_gridlines: false
-    y_axis_gridlines: true
-    show_view_names: true
-    limit_displayed_rows: false
-    y_axis_combined: true
-    show_y_axis_labels: true
-    show_y_axis_ticks: true
-    y_axis_tick_density: default
-    y_axis_tick_density_custom: 5
-    show_x_axis_label: true
-    show_x_axis_ticks: true
-    x_axis_scale: auto
-    y_axis_scale_mode: linear
-    ordering: none
-    show_null_labels: false
-    show_totals_labels: false
-    show_silhouette: false
-    totals_color: '#808080'
-    series_types: {}
-
-  - name: cda_ice_unique
-    title: Unique
-    left: 37
-    top: 0
-    height: 1
-    width: 6
-    type: single_value
-    model: cda_ice
-    explore: v_cdahighlights
-    dimensions: [v_cdahighlights.rule_type]
-    filters:
-      v_cdahighlights.rule_type: Unique
-    sorts: [v_cdahighlights.rule_type]
-    limit: '500'
-    column_limit: '50'
-    query_timezone: Europe/London
-    custom_color_enabled: true
-    custom_color: '#edc559'
-    show_single_value_title: false
-    show_comparison: false
-    comparison_type: value
-    comparison_reverse_colors: false
-    show_comparison_label: true
-    stacking: ''
-    show_value_labels: false
-    label_density: 25
-    legend_position: center
-    x_axis_gridlines: false
-    y_axis_gridlines: true
-    show_view_names: true
-    limit_displayed_rows: false
-    y_axis_combined: true
-    show_y_axis_labels: true
-    show_y_axis_ticks: true
-    y_axis_tick_density: default
-    y_axis_tick_density_custom: 5
-    show_x_axis_label: true
-    show_x_axis_ticks: true
-    x_axis_scale: auto
-    y_axis_scale_mode: linear
-    ordering: none
-    show_null_labels: false
-    show_totals_labels: false
-    show_silhouette: false
-    totals_color: '#808080'
-    series_types: {}
-
   - name: cda_ice_highlights_complete
     title: Complete
     left: 0
-    top: 1
+    top: 0
     height: 6
     width: 6
     type: looker_pie
@@ -434,7 +104,7 @@
   - name: cda_ice_highlights_timely
     title: Timely
     left: 7
-    top: 1
+    top: 0
     height: 6
     width: 6
     type: looker_pie
@@ -481,7 +151,7 @@
   - name: cda_ice_highlights_accurate
     title: Accurate
     left: 13
-    top: 1
+    top: 0
     height: 6
     width: 6
     type: looker_pie
@@ -525,10 +195,198 @@
       GREEN: '#92c26e'
       AMBER: '#eaa153'
 
+  - name: cda_ice_highlights_conform
+    title: Conform
+    left: 19
+    top: 0
+    height: 6
+    width: 6
+    type: looker_pie
+    model: cda_ice
+    explore: v_cdahighlights
+    dimensions: [v_cdahighlights.rag]
+    measures: [v_cdahighlights.sum_rag]
+    filters:
+      v_cdahighlights.rule_type: Conform
+    sorts: [v_cdahighlights.rag desc]
+    limit: '500'
+    column_limit: '50'
+    query_timezone: Europe/London
+    value_labels: none
+    label_type: labPer
+    stacking: ''
+    show_value_labels: false
+    label_density: 25
+    legend_position: center
+    x_axis_gridlines: false
+    y_axis_gridlines: true
+    show_view_names: true
+    limit_displayed_rows: false
+    y_axis_combined: true
+    show_y_axis_labels: true
+    show_y_axis_ticks: true
+    y_axis_tick_density: default
+    y_axis_tick_density_custom: 5
+    show_x_axis_label: true
+    show_x_axis_ticks: true
+    x_axis_scale: auto
+    y_axis_scale_mode: linear
+    ordering: none
+    show_null_labels: false
+    show_totals_labels: false
+    show_silhouette: false
+    totals_color: '#808080'
+    series_types: {}
+    series_colors:
+      RED: '#df5555'
+      GREEN: '#92c26e'
+      AMBER: '#eaa153'
+
+  - name: cda_ice_highlights_valid
+    title: Valid
+    left: 25
+    top: 0
+    height: 6
+    width: 6
+    type: looker_pie
+    model: cda_ice
+    explore: v_cdahighlights
+    dimensions: [v_cdahighlights.rag]
+    measures: [v_cdahighlights.sum_rag]
+    filters:
+      v_cdahighlights.rule_type: Valid
+    sorts: [v_cdahighlights.rag desc]
+    limit: '500'
+    column_limit: '50'
+    query_timezone: Europe/London
+    value_labels: none
+    label_type: labPer
+    stacking: ''
+    show_value_labels: false
+    label_density: 25
+    legend_position: center
+    x_axis_gridlines: false
+    y_axis_gridlines: true
+    show_view_names: true
+    limit_displayed_rows: false
+    y_axis_combined: true
+    show_y_axis_labels: true
+    show_y_axis_ticks: true
+    y_axis_tick_density: default
+    y_axis_tick_density_custom: 5
+    show_x_axis_label: true
+    show_x_axis_ticks: true
+    x_axis_scale: auto
+    y_axis_scale_mode: linear
+    ordering: none
+    show_null_labels: false
+    show_totals_labels: false
+    show_silhouette: false
+    totals_color: '#808080'
+    series_types: {}
+    series_colors:
+      RED: '#df5555'
+      GREEN: '#92c26e'
+      AMBER: '#eaa153'
+
+  - name: cda_ice_highlights_consistent
+    title: Consistent
+    left: 31
+    top: 0
+    height: 6
+    width: 6
+    type: looker_pie
+    model: cda_ice
+    explore: v_cdahighlights
+    dimensions: [v_cdahighlights.rag]
+    measures: [v_cdahighlights.sum_rag]
+    filters:
+      v_cdahighlights.rule_type: Consistent
+    sorts: [v_cdahighlights.rag desc]
+    limit: '500'
+    column_limit: '50'
+    query_timezone: Europe/London
+    value_labels: none
+    label_type: labPer
+    stacking: ''
+    show_value_labels: false
+    label_density: 25
+    legend_position: center
+    x_axis_gridlines: false
+    y_axis_gridlines: true
+    show_view_names: true
+    limit_displayed_rows: false
+    y_axis_combined: true
+    show_y_axis_labels: true
+    show_y_axis_ticks: true
+    y_axis_tick_density: default
+    y_axis_tick_density_custom: 5
+    show_x_axis_label: true
+    show_x_axis_ticks: true
+    x_axis_scale: auto
+    y_axis_scale_mode: linear
+    ordering: none
+    show_null_labels: false
+    show_totals_labels: false
+    show_silhouette: false
+    totals_color: '#808080'
+    series_types: {}
+    series_colors:
+      RED: '#df5555'
+      GREEN: '#92c26e'
+      AMBER: '#eaa153'
+
+  - name: cda_ice_highlights_unique
+    title: Unique
+    left: 37
+    top: 0
+    height: 6
+    width: 6
+    type: looker_pie
+    model: cda_ice
+    explore: v_cdahighlights
+    dimensions: [v_cdahighlights.rag]
+    measures: [v_cdahighlights.sum_rag]
+    filters:
+      v_cdahighlights.rule_type: Unique
+    sorts: [v_cdahighlights.rag desc]
+    limit: '500'
+    column_limit: '50'
+    query_timezone: Europe/London
+    value_labels: none
+    label_type: labPer
+    stacking: ''
+    show_value_labels: false
+    label_density: 25
+    legend_position: center
+    x_axis_gridlines: false
+    y_axis_gridlines: true
+    show_view_names: true
+    limit_displayed_rows: false
+    y_axis_combined: true
+    show_y_axis_labels: true
+    show_y_axis_ticks: true
+    y_axis_tick_density: default
+    y_axis_tick_density_custom: 5
+    show_x_axis_label: true
+    show_x_axis_ticks: true
+    x_axis_scale: auto
+    y_axis_scale_mode: linear
+    ordering: none
+    show_null_labels: false
+    show_totals_labels: false
+    show_silhouette: false
+    totals_color: '#808080'
+    series_types: {}
+    series_colors:
+      RED: '#df5555'
+      GREEN: '#92c26e'
+      AMBER: '#eaa153'
+
   - name: cda_ice_features
     title: Features
     left: 0
-    top: 7
+    top: 6
     height: 6
     width: 42
     type: looker_column
@@ -583,7 +441,7 @@
   - name: cda_ice_records
     title: Records
     left: 0
-    top: 13
+    top: 12
     height: 8
     width: 42
     type: table
