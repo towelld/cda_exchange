@@ -1,8 +1,8 @@
 - dashboard: cda_ice_summary
   title: ICE Summary
   layout: static
-  width: 2100
-  tile_size: 50
+  width: 1680
+  tile_size: 40
   auto_run: true
   embed_style:
     background_color: "#ffffff"
