@@ -2,7 +2,7 @@
   title: ICE Summary
   layout: static
   width: 2100
-  tile_size: 300
+  tile_size: 50
   auto_run: true
   embed_style:
     background_color: "#ffffff"
@@ -59,7 +59,7 @@
     left: 0
     top: 0
     height: 1
-    width: 1
+    width: 6
     type: single_value
     model: cda_ice
     explore: v_cdahighlights
@@ -106,7 +106,7 @@
     left: 1
     top: 0
     height: 1
-    width: 1
+    width: 6
     type: single_value
     model: cda_ice
     explore: v_cdahighlights
@@ -153,7 +153,7 @@
     left: 2
     top: 0
     height: 1
-    width: 1
+    width: 6
     type: single_value
     model: cda_ice
     explore: v_cdahighlights
@@ -200,7 +200,7 @@
     left: 3
     top: 0
     height: 1
-    width: 1
+    width: 6
     type: single_value
     model: cda_ice
     explore: v_cdahighlights
@@ -247,7 +247,7 @@
     left: 4
     top: 0
     height: 1
-    width: 1
+    width: 6
     type: single_value
     model: cda_ice
     explore: v_cdahighlights
@@ -294,7 +294,7 @@
     left: 5
     top: 0
     height: 1
-    width: 1
+    width: 6
     type: single_value
     model: cda_ice
     explore: v_cdahighlights
@@ -341,7 +341,7 @@
     left: 6
     top: 0
     height: 1
-    width: 1
+    width: 6
     type: single_value
     model: cda_ice
     explore: v_cdahighlights
@@ -387,7 +387,7 @@
     left: 0
     top: 1
     height: 2
-    width: 7
+    width: 42
     type: looker_column
     model: cda_ice
     explore: cdasummary
@@ -442,7 +442,7 @@
     left: 0
     top: 3
     height: 3
-    width: 7
+    width: 42
     type: looker_column
     model: cda_ice
     explore: cdasummary
@@ -497,7 +497,7 @@
     left: 0
     top: 6
     height: 5
-    width: 7
+    width: 42
     type: table
     model: cda_ice
     explore: v_cdarecords
