@@ -40,6 +40,7 @@ view: cdasummary {
       label: "Business Rules"
       url: "/embed/dashboards/cda_ice::cda_ice_business_rules?&feature_description={{ value }}"
     }
+    drill_fields: [rules_set*]
   }
 
   dimension: feature_name {
@@ -87,6 +88,10 @@ view: cdasummary {
     sql: ${total_count};;
     value_format: "0.0000"
     label: "Total"
+  }
+
+  set: rules_set {
+    fields: [rule_type]
   }
 
 }
