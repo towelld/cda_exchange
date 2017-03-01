@@ -72,7 +72,7 @@
     query_timezone: Europe/London
     custom_color_enabled: true
     custom_color: '#fa8d29'
-    show_single_value_title: true
+    show_single_value_title: false
     show_comparison: false
     comparison_type: value
     comparison_reverse_colors: false
