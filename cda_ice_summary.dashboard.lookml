@@ -148,12 +148,59 @@
     totals_color: '#808080'
     series_types: {}
 
+  - name: cda_ice_accurate
+    title: Accurate
+    left: 2
+    top: 0
+    height: 1
+    width: 1
+    type: single_value
+    model: cda_ice
+    explore: v_cdahighlights
+    dimensions: [v_cdahighlights.rule_type]
+    filters:
+      v_cdahighlights.rule_type: Accurate
+    sorts: [v_cdahighlights.rule_type]
+    limit: '500'
+    column_limit: '50'
+    query_timezone: Europe/London
+    custom_color_enabled: true
+    custom_color: '#5e8ab4'
+    show_single_value_title: false
+    show_comparison: false
+    comparison_type: value
+    comparison_reverse_colors: false
+    show_comparison_label: true
+    stacking: ''
+    show_value_labels: false
+    label_density: 25
+    legend_position: center
+    x_axis_gridlines: false
+    y_axis_gridlines: true
+    show_view_names: true
+    limit_displayed_rows: false
+    y_axis_combined: true
+    show_y_axis_labels: true
+    show_y_axis_ticks: true
+    y_axis_tick_density: default
+    y_axis_tick_density_custom: 5
+    show_x_axis_label: true
+    show_x_axis_ticks: true
+    x_axis_scale: auto
+    y_axis_scale_mode: linear
+    ordering: none
+    show_null_labels: false
+    show_totals_labels: false
+    show_silhouette: false
+    totals_color: '#808080'
+    series_types: {}
+
   - name: cda_ice_rules
     title: Rules
     left: 0
     top: 1
-    height: 4
-    width: 28
+    height: 2
+    width: 7
     type: looker_column
     model: cda_ice
     explore: cdasummary
@@ -206,9 +253,9 @@
   - name: cda_ice_features
     title: Features
     left: 0
-    top: 5
-    height: 5
-    width: 28
+    top: 3
+    height: 3
+    width: 7
     type: looker_column
     model: cda_ice
     explore: cdasummary
@@ -261,9 +308,9 @@
   - name: cda_ice_records
     title: Records
     left: 0
-    top: 10
+    top: 6
     height: 5
-    width: 28
+    width: 7
     type: table
     model: cda_ice
     explore: v_cdarecords
