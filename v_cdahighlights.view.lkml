@@ -1,4 +1,6 @@
 view: v_cdahighlights {
+  label: ""
+  view_label: ""
   sql_table_name: AbnMicsiceproductdq.vCDAHighlights ;;
 
   dimension: rag {
