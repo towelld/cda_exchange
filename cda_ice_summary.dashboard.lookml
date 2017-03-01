@@ -478,7 +478,6 @@
       AMBER: '#eaa153'
 
   - name: cda_ice_highlights_accurate
-    title: Accurate
     left: 13
     top: 1
     height: 6
