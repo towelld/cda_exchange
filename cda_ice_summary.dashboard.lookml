@@ -65,7 +65,9 @@
     dimensions: [v_cdahighlights.rag]
     measures: [v_cdahighlights.sum_rag]
     filters:
-      v_cdahighlights.rule_type: Complete
+      v_cdahighlights.rule_type_filter: Complete
+    listen:
+      rule_type: v_cdahighlights.rule_type
     sorts: [v_cdahighlights.rag desc]
     limit: '500'
     column_limit: '50'
