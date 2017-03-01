@@ -386,7 +386,7 @@
   - name: cda_ice_highlights_complete
     title: Complete
     left: 0
-    top: 0
+    top: 1
     height: 6
     width: 6
     type: looker_pie
@@ -433,7 +433,7 @@
   - name: cda_ice_highlights_timely
     title: Timely
     left: 7
-    top: 0
+    top: 1
     height: 6
     width: 6
     type: looker_pie
@@ -480,7 +480,7 @@
   - name: cda_ice_highlights_accurate
     title: Accurate
     left: 13
-    top: 0
+    top: 1
     height: 6
     width: 6
     type: looker_pie
