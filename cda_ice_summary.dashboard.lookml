@@ -1,13 +1,9 @@
 - dashboard: cda_ice_summary
   title: ICE Summary
-  layout: grid
-  rows:
-    - elements: [cda_ice_rules]
-      height: 250
-    - elements: [cda_ice_features]
-      height: 400
-    - elements: [cda_ice_records]
-      height: 400
+  layout: static
+  width: 2200
+  tile_size: 100
+  auto_run: true
   embed_style:
     background_color: "#ffffff"
     show_title: true
@@ -57,8 +53,60 @@
 
   elements:
 
+
+  - name: cda_ice_complete
+    title: Complete
+    left: 0
+    top: 0
+    height: 1
+    width: 4
+    type: single_value
+    model: cda_ice
+    explore: v_cdahighlights
+    dimensions: [v_cdahighlights.rule_type]
+    filters:
+      v_cdahighlights.rule_type: Complete
+    sorts: [v_cdahighlights.rule_type]
+    limit: '500'
+    column_limit: '50'
+    query_timezone: Europe/London
+    custom_color_enabled: true
+    custom_color: '#fa8d29'
+    show_single_value_title: true
+    show_comparison: false
+    comparison_type: value
+    comparison_reverse_colors: false
+    show_comparison_label: true
+    stacking: ''
+    show_value_labels: false
+    label_density: 25
+    legend_position: center
+    x_axis_gridlines: false
+    y_axis_gridlines: true
+    show_view_names: true
+    limit_displayed_rows: false
+    y_axis_combined: true
+    show_y_axis_labels: true
+    show_y_axis_ticks: true
+    y_axis_tick_density: default
+    y_axis_tick_density_custom: 5
+    show_x_axis_label: true
+    show_x_axis_ticks: true
+    x_axis_scale: auto
+    y_axis_scale_mode: linear
+    ordering: none
+    show_null_labels: false
+    show_totals_labels: false
+    show_silhouette: false
+    totals_color: '#808080'
+    series_types: {}
+
   - name: cda_ice_rules
     title: Rules
+    left: 0
+    top: 0
+    height: 5
+    width: 28
     type: looker_column
     model: cda_ice
     explore: cdasummary
@@ -108,9 +156,12 @@
     y_axis_min: ['0.50']
     y_axis_max: ['1']
 
-
   - name: cda_ice_features
     title: Features
+    left: 0
+    top: 5
+    height: 5
+    width: 28
     type: looker_column
     model: cda_ice
     explore: cdasummary
@@ -162,6 +213,10 @@
 
   - name: cda_ice_records
     title: Records
+    left: 0
+    top: 10
+    height: 5
+    width: 28
     type: table
     model: cda_ice
     explore: v_cdarecords
