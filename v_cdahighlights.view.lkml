@@ -30,8 +30,8 @@ view: v_cdahighlights {
 
   measure: sum_rag {
     type: sum
-    label: "Total"
-    view_label: "Total"
+    label: ""
+    view_label: ""
     sql: ${rag_count};;
   }
 
