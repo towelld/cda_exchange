@@ -112,13 +112,9 @@
     explore: v_cdahighlights
     dimensions: [v_cdahighlights.rag]
     measures: [v_cdahighlights.sum_rag]
+    filters:
+      v_cdahighlights.rule_type_filter: Timely
     listen:
-      currency: v_cdahighlights.currency
-      data_family: v_cdahighlights.data_family
-      expired: v_cdahighlights.expired
-      expiry: v_cdahighlights.expiry
-      feature_description: v_cdahighlights.feature_description
-      product_group: v_cdahighlights.product_group
       rule_type: v_cdahighlights.rule_type
     sorts: [v_cdahighlights.rag desc]
     limit: '500'
@@ -165,7 +161,9 @@
     dimensions: [v_cdahighlights.rag]
     measures: [v_cdahighlights.sum_rag]
     filters:
-      v_cdahighlights.rule_type: Accurate
+      v_cdahighlights.rule_type_filter: Accurate
+    listen:
+      rule_type: v_cdahighlights.rule_type
     sorts: [v_cdahighlights.rag desc]
     limit: '500'
     column_limit: '50'
@@ -211,7 +209,9 @@
     dimensions: [v_cdahighlights.rag]
     measures: [v_cdahighlights.sum_rag]
     filters:
-      v_cdahighlights.rule_type: Conform
+      v_cdahighlights.rule_type_filter: Conform
+    listen:
+      rule_type: v_cdahighlights.rule_type
     sorts: [v_cdahighlights.rag desc]
     limit: '500'
     column_limit: '50'
@@ -257,7 +257,9 @@
     dimensions: [v_cdahighlights.rag]
     measures: [v_cdahighlights.sum_rag]
     filters:
-      v_cdahighlights.rule_type: Valid
+      v_cdahighlights.rule_type_filter: Valid
+    listen:
+      rule_type: v_cdahighlights.rule_type
     sorts: [v_cdahighlights.rag desc]
     limit: '500'
     column_limit: '50'
@@ -303,7 +305,9 @@
     dimensions: [v_cdahighlights.rag]
     measures: [v_cdahighlights.sum_rag]
     filters:
-      v_cdahighlights.rule_type: Consistent
+      v_cdahighlights.rule_type_filter: Consistent
+    listen:
+      rule_type: v_cdahighlights.rule_type
     sorts: [v_cdahighlights.rag desc]
     limit: '500'
     column_limit: '50'
@@ -349,7 +353,9 @@
     dimensions: [v_cdahighlights.rag]
     measures: [v_cdahighlights.sum_rag]
     filters:
-      v_cdahighlights.rule_type: Unique
+      v_cdahighlights.rule_type_filter: Unique
+    listen:
+      rule_type: v_cdahighlights.rule_type
     sorts: [v_cdahighlights.rag desc]
     limit: '500'
     column_limit: '50'
