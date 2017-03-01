@@ -424,7 +424,7 @@
     show_totals_labels: false
     show_silhouette: false
     totals_color: '#fa8d29'
-    custom_color: '#fa8d29'
+    title_color: '#fa8d29'
     series_types: {}
     series_colors:
       RED: '#df5555'
