@@ -382,11 +382,12 @@
     show_silhouette: false
     totals_color: '#808080'
     series_types: {}
+
   - name: cda_ice_rules
     title: Rules
     left: 0
     top: 1
-    height: 2
+    height: 4
     width: 42
     type: looker_column
     model: cda_ice
@@ -440,8 +441,8 @@
   - name: cda_ice_features
     title: Features
     left: 0
-    top: 3
-    height: 3
+    top: 5
+    height: 6
     width: 42
     type: looker_column
     model: cda_ice
@@ -495,8 +496,8 @@
   - name: cda_ice_records
     title: Records
     left: 0
-    top: 6
-    height: 5
+    top: 11
+    height: 8
     width: 42
     type: table
     model: cda_ice
