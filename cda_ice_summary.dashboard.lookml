@@ -188,7 +188,7 @@
     show_null_labels: false
     show_totals_labels: false
     show_silhouette: false
-    totals_color: '#808080'
+    totals_color: '#646569'
     series_types: {}
     series_colors:
       RED: '#df5555'
