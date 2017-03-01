@@ -383,30 +383,26 @@
     totals_color: '#808080'
     series_types: {}
 
-  - name: cda_ice_rules
-    title: Rules
+  - name: cda_ice_highlights_complete
+    title: Complete
     left: 0
-    top: 1
+    top: 0
     height: 4
-    width: 42
-    type: looker_column
+    width: 6
+    type: looker_pie
     model: cda_ice
-    explore: cdasummary
-    dimensions: [cdasummary.rule_order, cdasummary.rule_type]
-    measures: [cdasummary.sum_total, cdasummary.sum_fail]
-    listen:
-      currency: cdasummary.currency
-      data_family: cdasummary.data_family
-      expired: cdasummary.expired
-      expiry: cdasummary.expiry
-      feature_description: cdasummary.feature_description
-      product_group: cdasummary.product_group
-      rule_type: cdasummary.rule_type
-    sorts: [cdasummary.rule_order]
+    explore: v_cdahighlights
+    dimensions: [v_cdahighlights.rag]
+    measures: [v_cdahighlights.sum_rag]
+    filters:
+      v_cdahighlights.rule_type: Complete
+    sorts: [v_cdahighlights.rag desc]
     limit: '500'
     column_limit: '50'
     query_timezone: Europe/London
-    stacking: percent
+    value_labels: none
+    label_type: labPer
+    stacking: ''
     show_value_labels: false
     label_density: 25
     legend_position: center
@@ -419,7 +415,7 @@
     show_y_axis_ticks: true
     y_axis_tick_density: default
     y_axis_tick_density_custom: 5
-    show_x_axis_label: false
+    show_x_axis_label: true
     show_x_axis_ticks: true
     x_axis_scale: auto
     y_axis_scale_mode: linear
@@ -428,15 +424,13 @@
     show_totals_labels: false
     show_silhouette: false
     totals_color: '#808080'
-    hidden_fields: [cdasummary.rule_order]
+    series_types: {}
     series_colors:
-      cdasummary.sum_fail: '#df5555'
-      cdasummary.sum_total: '#55565a'
-    hide_legend: true
-    label_color: ['#55565a']
-    label_value_format: 0.00%
-    y_axis_min: ['0.50']
-    y_axis_max: ['1']
+      RED: '#df5555'
+      GREEN: '#92c26e'
+      AMBER: '#eaa153'
+
+
 
   - name: cda_ice_features
     title: Features
