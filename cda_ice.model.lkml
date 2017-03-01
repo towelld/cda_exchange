@@ -10,7 +10,18 @@ explore: cdasummary {}
 explore: v_cdarecords {}
 explore: v_cdahighlights {}
 
-explore: data_elements {}
+explore: data_elements {
+  join: data_elements_rules {
+    sql_on: ${data_elements_rules.element_id} = ${data_elements.element_id} ;;
+    relationship: many_to_one
+  }
+  join: data_elements_rule_types {
+    sql_on: ${data_elements_rule_types.rule_type_id} = ${data_elements_rules.rule_type_id} ;;
+    relationship: one_to_one
+  }
+}
+
+
 explore: data_elements_rule_types {}
 
 explore: data_elements_rules {
