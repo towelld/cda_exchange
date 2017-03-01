@@ -104,8 +104,8 @@
   - name: cda_ice_rules
     title: Rules
     left: 0
-    top: 0
-    height: 5
+    top: 1
+    height: 4
     width: 28
     type: looker_column
     model: cda_ice
