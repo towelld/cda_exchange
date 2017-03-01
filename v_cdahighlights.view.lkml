@@ -1,7 +1,37 @@
 view: v_cdahighlights {
+  sql_table_name: AbnMicsiceproductdq.vCDAHighlights ;;
   label: ""
   view_label: ""
-  sql_table_name: AbnMicsiceproductdq.vCDAHighlights ;;
+
+  dimension: currency {
+    type: string
+    sql: ${TABLE}.currency ;;
+  }
+
+  dimension: data_family {
+    type: string
+    sql: ${TABLE}.data_family ;;
+  }
+
+  dimension: expired {
+    type: string
+    sql: ${TABLE}.expired ;;
+  }
+
+  dimension: expiry {
+    type: string
+    sql: ${TABLE}.expiry ;;
+  }
+
+  dimension: feature_description {
+    type: string
+    sql: ${TABLE}.feature_description ;;
+  }
+
+  dimension: product_group {
+    type: string
+    sql: ${TABLE}.product_group ;;
+  }
 
   dimension: rag {
     type: string
