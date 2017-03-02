@@ -5,7 +5,7 @@
     - elements: [cda_ice_business_rules_chart]
       height: 300
     - elements: [cda_ice_business_rules]
-      height: 1000
+      height: 700
   embed_style:
     background_color: "#ffffff"
     show_title: true
