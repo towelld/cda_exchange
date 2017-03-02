@@ -441,7 +441,7 @@
     model: cda_ice
     explore: cdasummary
     dimensions: [cdasummary.feature_description]
-    measures: [cdasummary.sum_fail, cdasummary.sum_total]
+    measures: [cdasummary.sum_fail, cdasummary.sum_pass]
     filters:
       cdasummary.sum_fail: '>0'
     listen:
@@ -456,7 +456,7 @@
     limit: '500'
     column_limit: '50'
     query_timezone: Europe/London
-    stacking: normal
+    stacking: percent
     show_value_labels: false
     label_density: 25
     legend_position: center
@@ -479,12 +479,12 @@
     show_silhouette: false
     totals_color: '#808080'
     series_colors:
-      cdasummary.sum_total: '#55565a'
+      cdasummary.sum_pass: '#55565a'
       cdasummary.sum_fail: '#df5555'
     hide_legend: true
     column_group_spacing_ratio: 0.3
-    y_axis_min: ['0']
-    y_axis_max: ['1']
+
+
 
   - name: cda_ice_records
     title: Records
