@@ -441,7 +441,7 @@
     model: cda_ice
     explore: cdasummary
     dimensions: [cdasummary.feature_description]
-    measures: [cdasummary.sum_total, cdasummary.sum_fail]
+    measures: [cdasummary.sum_fail, cdasummary.sum_total]
     filters:
       cdasummary.sum_fail: '>0'
     listen:
@@ -456,7 +456,7 @@
     limit: '500'
     column_limit: '50'
     query_timezone: Europe/London
-    stacking: percent
+    stacking: normal
     show_value_labels: false
     label_density: 25
     legend_position: center
