@@ -483,7 +483,7 @@
       cdasummary.sum_fail: '#df5555'
     hide_legend: true
     column_group_spacing_ratio: 0.3
-    y_axis_min: ['0.50']
+    y_axis_min: ['0']
     y_axis_max: ['1']
 
   - name: cda_ice_records
