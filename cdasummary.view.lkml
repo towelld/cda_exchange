@@ -88,4 +88,12 @@ view: cdasummary {
     value_format: "0.0000"
     label: "Total"
   }
+  measure: sum_pass {
+    type: number
+    sql: ${sum_total}-${sum_fail};;
+    value_format: "0.0000"
+    label: "Total"
+  }
+
+
 }
