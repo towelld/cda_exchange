@@ -80,7 +80,7 @@ view: cdasummary {
     type: max
     sql: ${fail_count};;
     value_format: "0.0000"
-    label: "Failure"
+    label: "Fail"
   }
   measure: sum_total {
     type: max
@@ -92,7 +92,7 @@ view: cdasummary {
     type: number
     sql: ${sum_total}-${sum_fail};;
     value_format: "0.0000"
-    label: "Total"
+    label: "Pass"
   }
 
 
