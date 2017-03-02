@@ -509,7 +509,7 @@
       product_group: v_cdarecords.product_group
       rule_type: v_cdarecords.rule_type
     sorts: [v_cdarecords.mics_boajcd, v_cdarecords.mics_boafcd, v_cdarecords.mics_boakcd, v_cdarecords.mics_swunn1]
-    limit: '100'
+    limit: '500'
     column_limit: '50'
     query_timezone: Europe/London
     show_view_names: false
