@@ -3,6 +3,7 @@ view: data_elements_detail {
 
   dimension: acronym {
     type: string
+    label: "Exchange"
     sql: ${TABLE}.acronym ;;
   }
 
@@ -48,6 +49,7 @@ view: data_elements_detail {
 
   dimension: data_element_data_definition {
     type: string
+    label: "Definition"
     sql: ${TABLE}.data_element_data_definition ;;
   }
 
@@ -118,6 +120,7 @@ view: data_elements_detail {
 
   dimension: data_short_description {
     type: string
+    label: "Short Description"
     sql: ${TABLE}.data_short_description ;;
   }
 
