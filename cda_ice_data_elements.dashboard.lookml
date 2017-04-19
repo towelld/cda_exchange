@@ -3,7 +3,7 @@
   layout: grid
   rows:
     - elements: [cda_ice_data_elements]
-      height: 3000
+      height: 700
   embed_style:
     background_color: "#ffffff"
     show_title: false
