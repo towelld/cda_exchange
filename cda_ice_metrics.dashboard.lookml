@@ -5,7 +5,7 @@
     - elements: [cda_ice_records_chart]
       height: 300
     - elements: [cda_ice_records_detail]
-      height: 300
+      height: 150
     - elements: [cda_ice_rule_count]
       height: 3000
   embed_style:
@@ -118,4 +118,3 @@
     series_colors:
       data_elements_rules.count: "#edc559"
     y_axis_value_format: '0'
-
