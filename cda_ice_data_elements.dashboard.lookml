@@ -12,6 +12,13 @@
     tile_background_color: "#ffffff"
     tile_text_color: "#646569"
 
+  filters:
+  - name: feature_description
+    type: field_filter
+    model: cda_ice
+    explore: data_elements
+    field: data_elements.feature_description
+
   elements:
 
   - name: cda_ice_data_elements
@@ -22,6 +29,8 @@
     dimensions: [data_elements_detail.data_element_name, data_elements_detail.data_family,
       data_elements_detail.data_element_type, data_elements.feature_description, data_elements_detail.acronym,
       data_elements_detail.data_element_data_definition]
+    listen:
+      feature_description: data_elements.feature_description
     sorts: [data_elements_detail.data_element_name]
     limit: '500'
     column_limit: '50'
