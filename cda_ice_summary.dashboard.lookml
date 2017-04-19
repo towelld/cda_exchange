@@ -62,7 +62,7 @@
       model: cda_ice
       explore: summary
       dimensions: [data_elements.feature_description]
-      measures: [summary.sum_complete, summary.sum_total]
+      measures: [summary.sum_complete, summary.sum_total, summary.sort_order]
       listen:
         feature_description: data_elements.feature_description
         family_name: data_families.family_name
@@ -91,7 +91,7 @@
         expression: '1-(${summary.sum_complete}/${summary.sum_total})'
         value_format:
         value_format_name: percent_2
-      sorts: [data_elements.feature_description]
+      sorts: [summary.sort_order]
       limit: '500'
       column_limit: '50'
       query_timezone: Europe/London
@@ -118,7 +118,7 @@
       show_silhouette: false
       totals_color: "#808080"
       series_types: {}
-      hidden_fields: [summary.sum_complete,summary.sum_total]
+      hidden_fields: [summary.sum_complete,summary.sum_total, summary.sort_order]
       series_colors:
         '100': "#646569"
         red: "#df5555"
@@ -138,7 +138,7 @@
       model: cda_ice
       explore: summary
       dimensions: [data_elements.feature_description]
-      measures: [summary.sum_timely, summary.sum_total]
+      measures: [summary.sum_timely, summary.sum_total, summary.sort_order]
       listen:
         feature_description: data_elements.feature_description
         family_name: data_families.family_name
@@ -163,7 +163,7 @@
         expression: '1-(${summary.sum_timely}/${summary.sum_total})'
         value_format:
         value_format_name: percent_2
-      sorts: [data_elements.feature_description]
+      sorts: [summary.sort_order]
       limit: '500'
       column_limit: '50'
       query_timezone: Europe/London
@@ -190,7 +190,7 @@
       show_silhouette: false
       totals_color: "#808080"
       series_types: {}
-      hidden_fields: [summary.sum_timely,summary.sum_total]
+      hidden_fields: [summary.sum_timely,summary.sum_total, summary.sort_order]
       series_colors:
         '100': "#646569"
         red: "#df5555"
@@ -210,7 +210,7 @@
       model: cda_ice
       explore: summary
       dimensions: [data_elements.feature_description]
-      measures: [summary.sum_accurate, summary.sum_total]
+      measures: [summary.sum_accurate, summary.sum_total, summary.sort_order]
       listen:
         feature_description: data_elements.feature_description
         family_name: data_families.family_name
@@ -235,7 +235,7 @@
         expression: '1-(${summary.sum_accurate}/${summary.sum_total})'
         value_format:
         value_format_name: percent_2
-      sorts: [data_elements.feature_description]
+      sorts: [summary.sort_order]
       limit: '500'
       column_limit: '50'
       query_timezone: Europe/London
@@ -262,7 +262,7 @@
       show_silhouette: false
       totals_color: "#808080"
       series_types: {}
-      hidden_fields: [summary.sum_accurate,summary.sum_total]
+      hidden_fields: [summary.sum_accurate,summary.sum_total, summary.sort_order]
       series_colors:
         '100': "#646569"
         red: "#df5555"
@@ -282,7 +282,7 @@
       model: cda_ice
       explore: summary
       dimensions: [data_elements.feature_description]
-      measures: [summary.sum_conform, summary.sum_total]
+      measures: [summary.sum_conform, summary.sum_total, summary.sort_order]
       listen:
         feature_description: data_elements.feature_description
         family_name: data_families.family_name
@@ -307,7 +307,7 @@
         expression: '1-(${summary.sum_conform}/${summary.sum_total})'
         value_format:
         value_format_name: percent_2
-      sorts: [data_elements.feature_description]
+      sorts: [summary.sort_order]
       limit: '500'
       column_limit: '50'
       query_timezone: Europe/London
@@ -334,7 +334,7 @@
       show_silhouette: false
       totals_color: "#808080"
       series_types: {}
-      hidden_fields: [summary.sum_conform, summary.sum_total]
+      hidden_fields: [summary.sum_conform, summary.sum_total, summary.sort_order]
       series_colors:
         '100': "#646569"
         red: "#df5555"
@@ -354,7 +354,7 @@
       model: cda_ice
       explore: summary
       dimensions: [data_elements.feature_description]
-      measures: [summary.sum_valid, summary.sum_total]
+      measures: [summary.sum_valid, summary.sum_total, summary.sort_order]
       listen:
         feature_description: data_elements.feature_description
         family_name: data_families.family_name
@@ -379,7 +379,7 @@
         expression: '1-(${summary.sum_valid}/${summary.sum_total})'
         value_format:
         value_format_name: percent_2
-      sorts: [data_elements.feature_description]
+      sorts: [summary.sort_order]
       limit: '500'
       column_limit: '50'
       query_timezone: Europe/London
@@ -406,7 +406,7 @@
       show_silhouette: false
       totals_color: "#808080"
       series_types: {}
-      hidden_fields: [summary.sum_valid, summary.sum_total]
+      hidden_fields: [summary.sum_valid, summary.sum_total, summary.sort_order]
       series_colors:
         '100': "#646569"
         red: "#df5555"
@@ -426,7 +426,7 @@
       model: cda_ice
       explore: summary
       dimensions: [data_elements.feature_description]
-      measures: [summary.sum_consistent, summary.sum_total]
+      measures: [summary.sum_consistent, summary.sum_total, summary.sort_order]
       listen:
         feature_description: data_elements.feature_description
         family_name: data_families.family_name
@@ -451,7 +451,7 @@
         expression: '1-(${summary.sum_consistent}/${summary.sum_total})'
         value_format:
         value_format_name: percent_2
-      sorts: [data_elements.feature_description]
+      sorts: [summary.sort_order]
       limit: '500'
       column_limit: '50'
       query_timezone: Europe/London
@@ -478,7 +478,7 @@
       show_silhouette: false
       totals_color: "#808080"
       series_types: {}
-      hidden_fields: [summary.sum_consistent, summary.sum_total]
+      hidden_fields: [summary.sum_consistent, summary.sum_total, summary.sort_order]
       series_colors:
         '100': "#646569"
         red: "#df5555"
@@ -498,7 +498,7 @@
       model: cda_ice
       explore: summary
       dimensions: [data_elements.feature_description]
-      measures: [summary.sum_unique, summary.sum_total]
+      measures: [summary.sum_unique, summary.sum_total, summary.sort_order]
       listen:
         feature_description: data_elements.feature_description
         family_name: data_families.family_name
@@ -523,7 +523,7 @@
         expression: '1-(${summary.sum_unique}/${summary.sum_total})'
         value_format:
         value_format_name: percent_2
-      sorts: [data_elements.feature_description]
+      sorts: [summary.sort_order]
       limit: '500'
       column_limit: '50'
       query_timezone: Europe/London
@@ -550,7 +550,7 @@
       show_silhouette: false
       totals_color: "#808080"
       series_types: {}
-      hidden_fields: [summary.sum_unique, summary.sum_total]
+      hidden_fields: [summary.sum_unique, summary.sum_total, summary.sort_order]
       series_colors:
         '100': "#646569"
         red: "#df5555"
