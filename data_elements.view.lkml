@@ -1,5 +1,5 @@
 view: data_elements {
-  sql_table_name: AbnMicsiceproductdq.DataElements ;;
+  sql_table_name: demoIce.DataElements ;;
 
   dimension: element_id {
     type: number

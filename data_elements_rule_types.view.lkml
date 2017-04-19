@@ -1,5 +1,5 @@
 view: data_elements_rule_types {
-  sql_table_name: AbnMicsiceproductdq.DataElementsRuleTypes ;;
+  sql_table_name: demoIce.DataElementsRuleTypes ;;
 
   dimension: rule_type {
     type: string

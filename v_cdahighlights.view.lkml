@@ -1,5 +1,5 @@
 view: v_cdahighlights {
-  sql_table_name: AbnMicsiceproductdq.vCDAHighlights ;;
+  sql_table_name: demoIce.vCDAHighlights ;;
   label: ""
   view_label: ""
 

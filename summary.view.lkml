@@ -1,5 +1,5 @@
 view: summary {
-  sql_table_name: DemoIce.Summary ;;
+  sql_table_name: demoIce.Summary ;;
 
   dimension: complete {
     type: number

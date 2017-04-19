@@ -1,5 +1,5 @@
 view: records {
-  sql_table_name: DemoIce.Records ;;
+  sql_table_name: demoIce.Records ;;
 
   dimension: a7_a8_st_check {
     type: string

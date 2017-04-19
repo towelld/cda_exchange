@@ -1,5 +1,5 @@
 view: data_elements_detail {
-  sql_table_name: AbnMicsiceproductdq.DataElementsDetail ;;
+  sql_table_name: demoIce.DataElementsDetail ;;
 
   dimension: acronym {
     type: string

@@ -1,5 +1,5 @@
 view: cdasummary {
-  sql_table_name: AbnMicsiceproductdq.CDASummary ;;
+  sql_table_name: demoIce.CDASummary ;;
   label: ""
   view_label: ""
 

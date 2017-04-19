@@ -1,5 +1,5 @@
 view: data_tolerances {
-  sql_table_name: AbnMicsiceproductdq.DataTolerances ;;
+  sql_table_name: demoIce.DataTolerances ;;
 
   dimension: element_id {
     type: number

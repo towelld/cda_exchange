@@ -1,5 +1,5 @@
 view: v_cdarecords {
-  sql_table_name: AbnMicsiceproductdq.vCDARecords ;;
+  sql_table_name: demoIce.vCDARecords ;;
 
   dimension: currency {
     type: string
