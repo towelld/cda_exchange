@@ -65,11 +65,13 @@ view: data_elements_detail {
 
   dimension: data_element_name {
     type: string
+    label: "Name"
     sql: ${TABLE}.data_element_name ;;
   }
 
   dimension: data_element_type {
     type: string
+    label: "Element Type"
     sql: ${TABLE}.data_element_type ;;
   }
 
