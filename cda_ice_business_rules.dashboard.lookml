@@ -30,7 +30,6 @@
     model: cda_ice
     explore: data_elements
     field: data_elements.feature_name
-    default_value: -EMPTY
 
   elements:
 
