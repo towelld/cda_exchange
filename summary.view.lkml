@@ -133,6 +133,6 @@ view: summary {
   }
   measure: sum_accurate {
     type: sum
-    sql: ${complete};;
+    sql: (${conform}+${valid}+${consistent}+${single})/4;;
   }
 }
