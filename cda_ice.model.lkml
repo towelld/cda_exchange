@@ -30,6 +30,10 @@ explore: data_elements {
     sql_on: ${data_elements_rule_types.rule_type_id} = ${data_elements_rules.rule_type_id} ;;
     relationship: one_to_one
   }
+  join: data_elements_detail {
+    sql_on: ${data_elements_detail.element_id} = ${data_elements.element_id} ;;
+    relationship: one_to_one
+  }
 }
 
 explore: data_elements_rule_types {}
