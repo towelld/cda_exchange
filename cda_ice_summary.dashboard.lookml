@@ -25,6 +25,30 @@
     model: cda_ice
     explore: data_families
     field: data_families.family_name
+  - name: product_group
+    label: 'Product Group'
+    type: field_filter
+    model: cda_ice
+    explore: summary
+    field: summary.product_group
+  - name: currency
+    label: 'Currency'
+    type: field_filter
+    model: cda_ice
+    explore: summary
+    field: summary.currency
+  - name: expiry
+    label: 'Expiry'
+    type: field_filter
+    model: cda_ice
+    explore: summary
+    field: summary.expiry
+  - name: expired
+    label: 'Expired'
+    type: field_filter
+    model: cda_ice
+    explore: summary
+    field: summary.expired
 
   elements:
 
@@ -42,6 +66,10 @@
       listen:
         feature_description: data_elements.feature_description
         family_name: data_families.family_name
+        product_group: summary.product_group
+        currency: summary.currency
+        expiry: summary.expiry
+        expired: summary.expired
       dynamic_fields:
       - table_calculation: red
         label: Red
