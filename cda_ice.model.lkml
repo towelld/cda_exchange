@@ -96,6 +96,10 @@ explore: summary {
   }
 }
 
+explore: files {}
+
+
+
 # - explore: assigned_role
 
 # - explore: assigned_user
@@ -141,8 +145,6 @@ explore: summary {
 #       sql_on: ${file_row_errors.file_id} = ${files.id}
 #       relationship: many_to_one
 
-
-# - explore: files
 
 # - explore: group_history
 
