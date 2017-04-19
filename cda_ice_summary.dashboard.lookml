@@ -30,10 +30,10 @@
 
     - name: cda_ice_summary_complete
       title: Completeness
-      left: 4
+      left: 0
       top: 0
       height: 35
-      width: 13
+      width: 17
       type: looker_bar
       model: cda_ice
       explore: summary
