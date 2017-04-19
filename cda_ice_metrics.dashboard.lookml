@@ -6,6 +6,8 @@
       height: 300
     - elements: [cda_ice_records_detail]
       height: 300
+    - elements: [cda_ice_rule_count]
+      height: 3000
   embed_style:
     background_color: "#ffffff"
     show_title: false
@@ -77,3 +79,43 @@
     conditional_formatting_ignored_fields: []
     conditional_formatting_include_totals: false
     conditional_formatting_include_nulls: false
+
+
+  - name: cda_ice_rule_count
+    title: Rule Count
+    type: looker_bar
+    model: cda_ice
+    explore: data_elements_rules
+    dimensions: [data_elements.feature_description]
+    measures: [data_elements_rules.count]
+    sorts: [data_elements.feature_description]
+    limit: '500'
+    column_limit: '50'
+    query_timezone: Europe/London
+    stacking: ''
+    show_value_labels: false
+    label_density: 25
+    legend_position: center
+    x_axis_gridlines: false
+    y_axis_gridlines: true
+    show_view_names: true
+    limit_displayed_rows: false
+    y_axis_combined: true
+    show_y_axis_labels: false
+    show_y_axis_ticks: true
+    y_axis_tick_density: default
+    y_axis_tick_density_custom: 5
+    show_x_axis_label: false
+    show_x_axis_ticks: true
+    x_axis_scale: auto
+    y_axis_scale_mode: linear
+    ordering: none
+    show_null_labels: false
+    show_totals_labels: false
+    show_silhouette: false
+    totals_color: "#808080"
+    series_types: {}
+    series_colors:
+      data_elements_rules.count: "#edc559"
+    y_axis_value_format: '0'
+
