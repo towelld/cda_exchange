@@ -1,4 +1,4 @@
-connection: "ctc1611db"
+connection: "ctc1611demo"
 
 # include all the views
 include: "*.view"
@@ -18,6 +18,7 @@ explore: cdasummary {
 }
 
 explore: v_cdarecords {}
+
 explore: v_cdahighlights {}
 
 explore: data_elements {
@@ -30,7 +31,6 @@ explore: data_elements {
     relationship: one_to_one
   }
 }
-
 
 explore: data_elements_rule_types {}
 
@@ -59,7 +59,42 @@ explore: data_elements_detail {
   }
 }
 
+explore: data_families {}
 
+explore: data_family_element_link {}
+
+explore: records {}
+
+explore: summary {
+  join: data_elements {
+    sql_on: ${data_elements.element_id} = ${summary.element_id} ;;
+    relationship: one_to_one
+  }
+  join: data_elements_rules {
+    sql_on: ${data_elements_rules.element_id} = ${summary.element_id} ;;
+    relationship: one_to_many
+  }
+  join: data_elements_rule_types {
+    sql_on: ${data_elements_rule_types.rule_type_id} = ${data_elements_rules.rule_type_id} ;;
+    relationship: one_to_one
+  }
+  join: data_family_element_link {
+    sql_on: ${data_family_element_link.element_id} = ${summary.element_id} ;;
+    relationship: many_to_one
+  }
+  join: data_families {
+    sql_on: ${data_families.family_id} = ${data_family_element_link.family_id} ;;
+    relationship: many_to_one
+  }
+  join: records {
+    sql_on: ${records.record_complete} = ${summary.complete} ;;
+    relationship: many_to_one
+  }
+  join: data_tolerances {
+    sql_on: ${data_tolerances.element_id} = ${summary.element_id} ;;
+    relationship: one_to_one
+  }
+}
 
 # - explore: assigned_role
 
@@ -76,10 +111,6 @@ explore: data_elements_detail {
 # - explore: comment_record_link
 
 # - explore: comments
-
-# - explore: data_families
-
-# - explore: data_family_element_link
 
 # - explore: document_info
 
