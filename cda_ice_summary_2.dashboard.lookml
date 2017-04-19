@@ -1,5 +1,5 @@
-- dashboard: cda_ice_summary
-  title: ICE Summary
+- dashboard: cda_ice_summary_2
+  title: ICE Summary 2
   layout: static
   width: 1680
   tile_size: 40

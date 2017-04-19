@@ -1,4 +1,4 @@
-- dashboard: summary
+- dashboard: cda_ice_summary
   title: ICE Summary
   layout: static
   width: 2310
