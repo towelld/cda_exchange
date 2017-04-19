@@ -24,6 +24,7 @@ view: data_tolerances {
   dimension: rag_complete_lower {
     type: number
     sql: ${TABLE}.rag_complete_lower ;;
+    html: <font color="#df5555">{{ rendered_value }}</font> ;;
   }
 
   dimension: rag_complete_upper {
