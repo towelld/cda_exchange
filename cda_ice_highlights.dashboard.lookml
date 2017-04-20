@@ -19,7 +19,7 @@
     title: Complete
     left: 0
     top: 0
-    height: 750
+    height: 100
     width: 1
     type: looker_pie
     model: cda_ice
