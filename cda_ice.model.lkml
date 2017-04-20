@@ -21,6 +21,8 @@ explore: v_cdarecords {}
 
 explore: v_cdahighlights {}
 
+explore: v_cdatolerances {}
+
 explore: data_elements {
   join: data_elements_rules {
     sql_on: ${data_elements_rules.element_id} = ${data_elements.element_id} ;;
