@@ -1,6 +1,11 @@
 view: v_cdatolerances {
   sql_table_name: DemoIce.vCDATolerances ;;
 
+  dimension: element_id {
+    type: number
+    sql: ${TABLE}.element_id ;;
+  }
+
   dimension: amber {
     type: string
     sql: ${TABLE}.amber ;;
