@@ -9,6 +9,7 @@ view: v_cdatolerances {
   dimension: amber {
     type: string
     sql: ${TABLE}.amber ;;
+    html: <font color="#EAA153">{{ rendered_value }}</font> ;;
   }
 
   dimension: family_description {
@@ -29,6 +30,7 @@ view: v_cdatolerances {
   dimension: green {
     type: string
     sql: ${TABLE}.green ;;
+    html: <font color="#92c263">{{ rendered_value }}</font> ;;
   }
 
   dimension: rag_comments {
@@ -53,6 +55,7 @@ view: v_cdatolerances {
   dimension: red {
     type: string
     sql: ${TABLE}.red ;;
+    html: <font color="#df5555">{{ rendered_value }}</font> ;;
   }
 
   dimension: rule_type {
