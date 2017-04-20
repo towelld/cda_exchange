@@ -27,11 +27,11 @@
     model: cda_ice
     explore: v_cdatolerances
     dimensions: [v_cdatolerances.sort_order, v_cdatolerances.family_name, v_cdatolerances.family_description,
-      v_cdatolerances.feature_description, v_cdatolerances.rule_type, v_cdatolerances.green,
+      data_elements.feature_description, v_cdatolerances.rule_type, v_cdatolerances.green,
       v_cdatolerances.amber, v_cdatolerances.red, v_cdatolerances.rag_date, v_cdatolerances.rag_comments]
     listen:
-      feature_description: v_cdatolerances.feature_description
-    sorts: [v_cdatolerances.feature_description]
+      feature_description: data_elements.feature_description
+    sorts: [data_elements.feature_description, v_cdatolerances.sort_order]
     limit: '1200'
     column_limit: '50'
     query_timezone: Europe/London
