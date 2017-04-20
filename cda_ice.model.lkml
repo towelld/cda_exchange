@@ -32,6 +32,7 @@ explore: v_summary {
     relationship: one_to_many
   }
 }
+explore: v_cdahighlights_summary {}
 
 explore: data_elements {
   join: data_elements_rules {
