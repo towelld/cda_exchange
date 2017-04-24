@@ -19,7 +19,7 @@
     type: looker_pie
     left: 0
     top: 0
-    height: 10
+    height: 5
     width: 10
     model: cda_ice
     explore: v_cdahighlights_summary
@@ -66,7 +66,7 @@
     type: looker_pie
     left: 10
     top: 0
-    height: 10
+    height: 5
     width: 10
     model: cda_ice
     explore: v_cdahighlights_summary
@@ -113,7 +113,7 @@
     type: looker_pie
     left: 20
     top: 0
-    height: 10
+    height: 5
     width: 10
     model: cda_ice
     explore: v_cdahighlights_summary
@@ -154,8 +154,3 @@
       GREEN: "#92c26e"
       RED: "#df5555"
       AMBER: "#eaa153"
-
-
-
-
-

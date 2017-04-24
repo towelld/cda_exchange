@@ -4,6 +4,7 @@ view: v_cdahighlights_summary {
   dimension: rag {
     type: string
     sql: ${TABLE}.rag ;;
+    label: "RAG"
   }
 
   dimension: rag_count {
@@ -29,6 +30,7 @@ view: v_cdahighlights_summary {
   measure: sum_rag_count {
     type: sum
     sql: ${rag_count};;
+    label: "Count"
   }
 
 }
