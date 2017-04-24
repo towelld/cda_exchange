@@ -334,7 +334,7 @@
     type: table
     left: 0
     top: 7
-    height: 30
+    height: 20
     width: 30
     model: cda_ice
     explore: v_cdahighlights_rags
