@@ -22,14 +22,14 @@ explore: v_cdarecords {}
 explore: v_cdatolerances {
   join: data_elements {
     sql_on: ${data_elements.element_id} = ${v_cdatolerances.element_id} ;;
-    relationship: one_to_one
+    relationship: one_to_many
   }
 }
 
 explore: v_summary {
   join: data_tolerances {
     sql_on: ${data_tolerances.element_id} = ${v_summary.element_id} ;;
-    relationship: one_to_many
+    relationship: one_to_one
   }
 }
 explore: v_cdahighlights_summary {}
