@@ -20,9 +20,9 @@ view: v_cdahighlights_rags {
   dimension: rag {
     type: string
     sql: ${TABLE}.RAG ;;
-    html: {% if value == "RED" %}
+    html: {% if v_cdahighlights_rags.rag._value == "RED" %}
             <font color="#df5555">{{ rendered_value }}</font>
-          {% elsif value == "AMBER" %}
+          {% elsif v_cdahighlights_rags.rag._value == "AMBER" %}
             <font color="#eaa153">{{ rendered_value }}</font>
           {% else %}
             <font color="#92c26e">{{ rendered_value }}</font>
