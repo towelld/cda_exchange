@@ -212,3 +212,119 @@
       v_cdahighlights_summary.sum_rag_count: "#92c26e"
     hide_legend: true
     single_value_title: GREEN
+
+  - name: cda_ice_highlights_amber
+    title: Untitled Visualization
+    type: single_value
+    left: 20
+    top: 5
+    height: 2
+    width: 10
+    model: cda_ice
+    explore: v_cdahighlights_summary
+    dimensions: [v_cdahighlights_summary.rag]
+    measures: [v_cdahighlights_summary.sum_rag_count]
+    filters:
+      v_cdahighlights_summary.rag: AMBER
+      v_cdahighlights_summary.rule_type: Overall
+    sorts: [v_cdahighlights_summary.sum_rag_count desc]
+    limit: '500'
+    column_limit: '50'
+    query_timezone: Europe/London
+    custom_color_enabled: true
+    custom_color: "#92c26e"
+    show_single_value_title: true
+    show_comparison: false
+    comparison_type: change
+    comparison_reverse_colors: false
+    show_comparison_label: false
+    stacking: ''
+    show_value_labels: false
+    label_density: 25
+    legend_position: center
+    x_axis_gridlines: false
+    y_axis_gridlines: true
+    show_view_names: false
+    limit_displayed_rows: false
+    y_axis_combined: true
+    show_y_axis_labels: false
+    show_y_axis_ticks: false
+    y_axis_tick_density: default
+    y_axis_tick_density_custom: 5
+    show_x_axis_label: false
+    show_x_axis_ticks: false
+    x_axis_scale: auto
+    y_axis_scale_mode: linear
+    ordering: none
+    show_null_labels: false
+    show_totals_labels: false
+    show_silhouette: false
+    totals_color: "#808080"
+    value_labels: none
+    label_type: labPer
+    series_types: {}
+    series_colors:
+      GREEN: "#92c26e"
+      RED: "#df5555"
+      AMBER: "#eaa153"
+      v_cdahighlights_summary.sum_rag_count: "#eaa153"
+    hide_legend: true
+    single_value_title: AMBER
+
+  - name: cda_ice_highlights_red
+    title: Untitled Visualization
+    type: single_value
+    left: 30
+    top: 5
+    height: 2
+    width: 10
+    model: cda_ice
+    explore: v_cdahighlights_summary
+    dimensions: [v_cdahighlights_summary.rag]
+    measures: [v_cdahighlights_summary.sum_rag_count]
+    filters:
+      v_cdahighlights_summary.rag: RED
+      v_cdahighlights_summary.rule_type: Overall
+    sorts: [v_cdahighlights_summary.sum_rag_count desc]
+    limit: '500'
+    column_limit: '50'
+    query_timezone: Europe/London
+    custom_color_enabled: true
+    custom_color: "#92c26e"
+    show_single_value_title: true
+    show_comparison: false
+    comparison_type: change
+    comparison_reverse_colors: false
+    show_comparison_label: false
+    stacking: ''
+    show_value_labels: false
+    label_density: 25
+    legend_position: center
+    x_axis_gridlines: false
+    y_axis_gridlines: true
+    show_view_names: false
+    limit_displayed_rows: false
+    y_axis_combined: true
+    show_y_axis_labels: false
+    show_y_axis_ticks: false
+    y_axis_tick_density: default
+    y_axis_tick_density_custom: 5
+    show_x_axis_label: false
+    show_x_axis_ticks: false
+    x_axis_scale: auto
+    y_axis_scale_mode: linear
+    ordering: none
+    show_null_labels: false
+    show_totals_labels: false
+    show_silhouette: false
+    totals_color: "#808080"
+    value_labels: none
+    label_type: labPer
+    series_types: {}
+    series_colors:
+      GREEN: "#92c26e"
+      RED: "#df5555"
+      AMBER: "#eaa153"
+      v_cdahighlights_summary.sum_rag_count: "#df5555"
+    hide_legend: true
+    single_value_title: RED
