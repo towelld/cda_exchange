@@ -33,6 +33,7 @@ explore: v_summary {
   }
 }
 explore: v_cdahighlights_summary {}
+explore: v_cdahighlights_rags {}
 
 explore: data_elements {
   join: data_elements_rules {
