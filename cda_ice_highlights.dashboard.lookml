@@ -2,7 +2,7 @@
   title: ICE Highlights
   layout: static
   width: 2250
-  tile_size: 750
+  tile_size: 75
   auto_run: true
   embed_style:
     background_color: "#ffffff"
@@ -20,7 +20,7 @@
     left: 0
     top: 0
     height: 10
-    width: 1
+    width: 10
     model: cda_ice
     explore: v_cdahighlights_summary
     dimensions: [v_cdahighlights_summary.rag]
