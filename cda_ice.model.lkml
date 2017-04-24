@@ -22,7 +22,7 @@ explore: v_cdarecords {}
 explore: v_cdatolerances {
   join: data_elements {
     sql_on: ${data_elements.element_id} = ${v_cdatolerances.element_id} ;;
-    relationship: one_to_many
+    relationship: one_to_one
   }
 }
 
