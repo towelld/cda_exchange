@@ -12,6 +12,13 @@
     tile_background_color: "#ffffff"
     tile_text_color: "#646569"
 
+  filters:
+  - name: feature_description
+    type: field_filter
+    model: cda_ice
+    explore: data_elements
+    field: data_elements.feature_description
+
   elements:
 
   - name: cda_ice_highlights_complete
@@ -338,9 +345,11 @@
     width: 30
     model: cda_ice
     explore: v_cdahighlights_rags
-    dimensions: [v_cdahighlights_rags.data_element, v_cdahighlights_rags.data_check,
+    dimensions: [data_elements.feature_description, v_cdahighlights_rags.data_check,
       v_cdahighlights_rags.rag]
     sorts: [v_cdahighlights_rags.data_element]
+    listen:
+      feature_description: data_elements.feature_description
     limit: '500'
     column_limit: '50'
     query_timezone: Europe/London
