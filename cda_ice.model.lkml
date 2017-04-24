@@ -32,8 +32,15 @@ explore: v_summary {
     relationship: one_to_one
   }
 }
+
 explore: v_cdahighlights_summary {}
-explore: v_cdahighlights_rags {}
+
+explore: v_cdahighlights_rags {
+  join: data_elements {
+    sql_on: ${data_elements.element_id} = ${v_cdahighlights_rags.element_id} ;;
+    relationship: one_to_one
+  }
+}
 
 explore: data_elements {
   join: data_elements_rules {
@@ -113,9 +120,6 @@ explore: summary {
     relationship: one_to_one
   }
 }
-
-
-
 
 explore: files {}
 
