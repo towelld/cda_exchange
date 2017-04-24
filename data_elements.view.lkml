@@ -8,7 +8,7 @@ view: data_elements {
 
   dimension: feature_description {
     type: string
-    label: "Description"
+    label: "Name"
     sql: ${TABLE}.feature_description ;;
   }
 
