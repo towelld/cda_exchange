@@ -328,3 +328,30 @@
       v_cdahighlights_summary.sum_rag_count: "#df5555"
     hide_legend: true
     single_value_title: RED
+
+  - name: cda_ice_highlights_rags
+    title: Red and Amber Data Elements
+    type: table
+    left: 0
+    top: 7
+    height: 50
+    width: 30
+    model: cda_ice
+    explore: v_cdahighlights_rags
+    dimensions: [v_cdahighlights_rags.data_element, v_cdahighlights_rags.data_check,
+      v_cdahighlights_rags.rag]
+    sorts: [v_cdahighlights_rags.data_element]
+    limit: '500'
+    column_limit: '50'
+    query_timezone: Europe/London
+    show_view_names: false
+    show_row_numbers: true
+    truncate_column_names: false
+    hide_totals: false
+    hide_row_totals: false
+    table_theme: gray
+    limit_displayed_rows: false
+    enable_conditional_formatting: false
+    conditional_formatting_ignored_fields: []
+    conditional_formatting_include_totals: false
+    conditional_formatting_include_nulls: false
