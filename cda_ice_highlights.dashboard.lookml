@@ -17,10 +17,16 @@
   - name: cda_ice_highlights_complete
     title: Complete
     type: looker_pie
+    left: 0
+    top: 0
+    height: 10
+    width: 1
     model: cda_ice
     explore: v_cdahighlights_summary
     dimensions: [v_cdahighlights_summary.rag]
     measures: [v_cdahighlights_summary.sum_rag_count]
+    filters:
+      v_cdahighlights_summary.rule_type: Complete
     sorts: [v_cdahighlights_summary.sum_rag_count desc]
     limit: '500'
     column_limit: '50'
