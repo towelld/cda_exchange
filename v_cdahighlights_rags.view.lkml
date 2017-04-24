@@ -4,6 +4,7 @@ view: v_cdahighlights_rags {
   dimension: data_check {
     type: string
     sql: ${TABLE}.data_check ;;
+    label: "Rule Type"
   }
 
   dimension: data_element {
@@ -19,6 +20,14 @@ view: v_cdahighlights_rags {
   dimension: rag {
     type: string
     sql: ${TABLE}.RAG ;;
+    html: {% if value = "RED" %}
+            <font color="#df5555">{{ rendered_value }}</font>
+          {% elsif value = "AMBER" %}
+            <font color="#eaa153">{{ rendered_value }}</font>
+          {% else %}
+            <font color="#92c26e">{{ rendered_value }}</font>
+          {% endif %} ;;
+
   }
 
   measure: count {

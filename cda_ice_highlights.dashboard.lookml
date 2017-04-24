@@ -334,7 +334,7 @@
     type: table
     left: 0
     top: 7
-    height: 50
+    height: 30
     width: 30
     model: cda_ice
     explore: v_cdahighlights_rags
@@ -345,7 +345,7 @@
     column_limit: '50'
     query_timezone: Europe/London
     show_view_names: false
-    show_row_numbers: true
+    show_row_numbers: false
     truncate_column_names: false
     hide_totals: false
     hide_row_totals: false
