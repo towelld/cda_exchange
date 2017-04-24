@@ -216,7 +216,7 @@
   - name: cda_ice_highlights_amber
     title: Untitled Visualization
     type: single_value
-    left: 20
+    left: 10
     top: 5
     height: 2
     width: 10
@@ -232,7 +232,7 @@
     column_limit: '50'
     query_timezone: Europe/London
     custom_color_enabled: true
-    custom_color: "#92c26e"
+    custom_color: "#eaa153"
     show_single_value_title: true
     show_comparison: false
     comparison_type: change
@@ -274,7 +274,7 @@
   - name: cda_ice_highlights_red
     title: Untitled Visualization
     type: single_value
-    left: 30
+    left: 20
     top: 5
     height: 2
     width: 10
@@ -290,7 +290,7 @@
     column_limit: '50'
     query_timezone: Europe/London
     custom_color_enabled: true
-    custom_color: "#92c26e"
+    custom_color: "#df5555"
     show_single_value_title: true
     show_comparison: false
     comparison_type: change
