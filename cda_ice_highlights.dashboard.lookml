@@ -345,11 +345,10 @@
     width: 30
     model: cda_ice
     explore: v_cdahighlights_rags
-    dimensions: [data_elements.feature_description, v_cdahighlights_rags.data_check,
-      v_cdahighlights_rags.rag]
-    sorts: [v_cdahighlights_rags.data_element]
+    dimensions: [data_elements.feature_description, v_cdahighlights_rags.data_check, v_cdahighlights_rags.rag]
     listen:
       feature_description: data_elements.feature_description
+    sorts: [v_cdahighlights_rags.data_element]
     limit: '500'
     column_limit: '50'
     query_timezone: Europe/London
