@@ -127,8 +127,8 @@
         amber: "#eaa153"
         green: "#92c263"
       hide_legend: true
-      y_axis_min: ['0.85']
-      y_axis_max: ['1']
+      #y_axis_min: ['0.85']
+      #y_axis_max: ['1']
 
     - name: cda_ice_summary_timely
       title: Timeliness
