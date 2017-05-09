@@ -88,10 +88,12 @@ view: summary_cda {
   measure: sum_total {
     type: sum
     sql: ${total};;
+    drill_fields: [records.system,records.pk]
   }
   measure: sum_rule {
     type: sum
     sql: ${rule_type_count};;
+    drill_fields: [records.system,records.pk]
   }
 
 }
