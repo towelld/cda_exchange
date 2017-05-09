@@ -95,5 +95,10 @@ view: summary_cda {
     sql: ${rule_type_count};;
     drill_fields: [records.system,records.pk]
   }
+  measure: red {
+    type: number
+    sql: case when (${summary_cda.sum_rule}/${summary_cda.sum_total}<1.0 then ${summary_cda.sum_rule}/${summary_cda.sum_total} else 0 end  ;;
+    value_format_name: percent_2
+  }
 
 }
