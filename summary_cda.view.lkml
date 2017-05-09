@@ -103,7 +103,7 @@ view: summary_cda {
   }
   measure: amber {
     type: number
-    sql: case when ${summary_cda.sum_rule}/${summary_cda.sum_total}>=0.90 then case when ${summary_cda.sum_rule}/${summary_cda.sum_total}<0.95 then ${summary_cda.sum_rule}/${summary_cda.sum_total} else 0 else 0 end  ;;
+    sql: case when ${summary_cda.sum_rule}/${summary_cda.sum_total}>=0.90 then case when ${summary_cda.sum_rule}/${summary_cda.sum_total}<0.95 then ${summary_cda.sum_rule}/${summary_cda.sum_total} else 0 end else 0 end  ;;
     value_format_name: percent_2
     drill_fields: [records.system,records.pk]
   }
