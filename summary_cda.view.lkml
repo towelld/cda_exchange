@@ -83,6 +83,6 @@ view: summary_cda {
 
   measure: count {
     type: count
-    drill_fields: [records.system]
+    drill_fields: [records.system,records.pk]
   }
 }
