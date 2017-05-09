@@ -85,4 +85,13 @@ view: summary_cda {
     type: count
     drill_fields: [records.system,records.pk]
   }
+  measure: sum_total {
+    type: sum
+    sql: ${total};;
+  }
+  measure: sum_rule {
+    type: sum
+    sql: ${rule_type_count};;
+  }
+
 }

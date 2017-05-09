@@ -132,6 +132,18 @@ explore: summary_cda {
     sql_on: ${records.pk} = ${summary_cda_record_link.record_pk} ;;
     relationship: many_to_many
   }
+  join: data_elements {
+    sql_on: ${data_elements.element_id} = ${summary_cda.element_id} ;;
+    relationship: one_to_one
+  }
+  join: data_family_element_link {
+    sql_on: ${data_family_element_link.element_id} = ${summary_cda.element_id} ;;
+    relationship: many_to_one
+  }
+  join: data_families {
+    sql_on: ${data_families.family_id} = ${data_family_element_link.family_id} ;;
+    relationship: many_to_one
+  }
 }
 
 # - explore: assigned_role
