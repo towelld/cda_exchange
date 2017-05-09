@@ -62,7 +62,7 @@
       model: cda_ice
       explore: summary_cda
       dimensions: [data_elements.feature_description]
-      measures: [summary_cda.sum_rule, summary_cda.sum_total, summary_cda.sort_order]
+      measures: [summary_cda.red, summary_cda.amber, summary_cda.green, summary_cda.total100, summary_cda.sort_order]
       filters:
         summary_cda.rule_type_id: '1'
       listen:
@@ -72,28 +72,6 @@
         currency: summary_cda.currency
         expiry: summary_cda.expiry
         expired: summary_cda.expired
-      dynamic_fields:
-      - table_calculation: red
-        label: Red
-        expression: 'if (${summary_cda.sum_rule}/${summary_cda.sum_total}<1.0,${summary_cda.sum_rule}/${summary_cda.sum_total},0)'
-        value_format:
-        value_format_name: percent_2
-      - table_calculation: amber
-        label: Amber
-        expression: 'if (${summary_cda.sum_rule}/${summary_cda.sum_total}>=0.90,if(${summary_cda.sum_rule}/${summary_cda.sum_total}<0.95,${summary_cda.sum_rule}/${summary_cda.sum_total},0),0)'
-        value_format:
-        value_format_name: percent_2
-      - table_calculation: green
-        label: Green
-        expression: 'if (${summary_cda.sum_rule}/${summary_cda.sum_total}>=1.0,${summary_cda.sum_rule}/${summary_cda.sum_total},0)'
-        value_format:
-        value_format_name: percent_2
-      - table_calculation: '100'
-        label: 100%
-        expression: '1-(${summary_cda.sum_rule}/${summary_cda.sum_total})'
-        value_format:
-        value_format_name: percent_2
-        drill_fields: [records.system,records.pk]
       sorts: [summary_cda.sort_order]
       limit: '500'
       column_limit: '50'
@@ -121,15 +99,13 @@
       show_silhouette: false
       totals_color: "#808080"
       series_types: {}
-      hidden_fields: [summary_cda.sum_rule,summary_cda.sum_total, summary_cda.sort_order]
+      hidden_fields: [summary_cda.sort_order]
       series_colors:
-        '100': "#646569"
-        red: "#df5555"
-        amber: "#eaa153"
-        green: "#92c263"
+        summary_cda.red: "#df5555"
+        summary_cda.amber: "#eaa153"
+        summary_cda.green: "#92c263"
+        summary_cda.total100: "#646569"
       hide_legend: true
-      #y_axis_min: ['0.85']
-      #y_axis_max: ['1']
 
     - name: cda_ice_summary_timely
       title: Timeliness
