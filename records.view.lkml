@@ -2176,6 +2176,7 @@ view: records {
 
   dimension: int_bocfc2 {
     type: string
+    view_label: "ULV Trading Type Code"
     sql: ${TABLE}.INT_BOCFC2 ;;
   }
 
