@@ -123,7 +123,16 @@ explore: summary {
 
 explore: files {}
 
-
+explore: summary_cda {
+  join: summary_cda_record_link {
+    sql_on: ${summary_cda_record_link.summary_pk} = ${summary_cda.pk} ;;
+    relationship: many_to_many
+  }
+  join: records {
+    sql_on: ${records.pk} = ${summary_cda_record_link.record_pk} ;;
+    relationship: many_to_many
+  }
+}
 
 # - explore: assigned_role
 
