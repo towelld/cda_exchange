@@ -93,6 +93,7 @@
         expression: '1-(${summary_cda.sum_rule}/${summary_cda.sum_total})'
         value_format:
         value_format_name: percent_2
+        drill_fields: [records.system,records.pk]
       sorts: [summary_cda.sort_order]
       limit: '500'
       column_limit: '50'
