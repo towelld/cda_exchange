@@ -2699,17 +2699,6 @@ view: records {
     sql: ${TABLE}.INT_BOIYNB_Valid ;;
   }
 
-  dimension: int_bojdtx {
-    type: string
-    label: "Class Short Name"
-    sql: isnull(${TABLE}.INT_BOJDTX,'<null>') ;;
-    html:
-    {% if {{ int_bojdtx_complete._value }} == 0 || {{ int_bojdtx_conform._value }} == 0 || {{ int_bojdtx_unique._value }} == 0 || {{ int_bojdtx_valid._value }} == 0 %}
-    <p style="color: black; background-color: #df5555">{{ rendered_value }}</p>
-    {% endif %}
-    ;;
-  }
-
   dimension: int_bojdtx_complete {
     type: string
     hidden: yes
@@ -2732,6 +2721,17 @@ view: records {
     type: string
     hidden: yes
     sql: ${TABLE}.INT_BOJDTX_Valid ;;
+  }
+
+  dimension: int_bojdtx {
+    type: string
+    label: "Class Short Name"
+    sql: isnull(${TABLE}.INT_BOJDTX,'<null>') ;;
+    html:
+    {% if {{ int_bojdtx_complete._value }} == "0" || {{ int_bojdtx_conform._value }} == "0" || {{ int_bojdtx_unique._value }} == "0" || {{ int_bojdtx_valid._value }} == "0" %}
+    <p style="color: black; background-color: #df5555">{{ rendered_value }}</p>
+    {% endif %}
+    ;;
   }
 
   dimension: int_bojftx {
