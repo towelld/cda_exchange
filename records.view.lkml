@@ -2712,21 +2712,25 @@ view: records {
 
   dimension: int_bojdtx_complete {
     type: string
+    hidden: yes
     sql: ${TABLE}.INT_BOJDTX_Complete ;;
   }
 
   dimension: int_bojdtx_conform {
     type: string
+    hidden: yes
     sql: ${TABLE}.INT_BOJDTX_Conform ;;
   }
 
   dimension: int_bojdtx_unique {
     type: string
+    hidden: yes
     sql: ${TABLE}.INT_BOJDTX_Unique ;;
   }
 
   dimension: int_bojdtx_valid {
     type: string
+    hidden: yes
     sql: ${TABLE}.INT_BOJDTX_Valid ;;
   }
 
