@@ -632,7 +632,6 @@ view: records {
   dimension: int_a7_a8_st {
     type: string
     label: "Option Type"
-    view_label: "Option Type"
     sql: ${TABLE}.INT_A7A8ST ;;
   }
 
@@ -804,7 +803,6 @@ view: records {
   dimension: int_a7_ammd {
     type: string
     label: "Expiry Date"
-    view_label: "Expiry Date"
     sql: ${TABLE}.INT_A7AMMD ;;
   }
 
@@ -2006,7 +2004,6 @@ view: records {
   dimension: int_boabcd {
     type: string
     label: "Currency"
-    view_label: "Currency"
     sql: ${TABLE}.INT_BOABCD ;;
   }
 
@@ -2058,7 +2055,6 @@ view: records {
   dimension: int_boafcd {
     type: string
     label: "Exchange Code"
-    view_label: "Exchange Code"
     sql: ${TABLE}.INT_BOAFCD ;;
   }
 
@@ -2085,7 +2081,6 @@ view: records {
   dimension: int_boajcd {
     type: string
     label: "Product Group Code"
-    view_label: "Product Group Code"
     sql: ${TABLE}.INT_BOAJCD ;;
   }
 
@@ -2112,7 +2107,6 @@ view: records {
   dimension: int_boakcd {
     type: string
     label: "Symbol"
-    view_label: "Symbol"
     sql: ${TABLE}.INT_BOAKCD ;;
   }
 
@@ -2189,7 +2183,6 @@ view: records {
   dimension: int_bocfc2 {
     type: string
     label: "ULV Trading Type Code"
-    view_label: "ULV Trading Type Code"
     sql: ${TABLE}.INT_BOCFC2 ;;
   }
 
@@ -2291,7 +2284,6 @@ view: records {
   dimension: int_bocnnb {
     type: number
     label: "Trading Unit"
-    view_label: "Trading Unit"
     sql: ${TABLE}.INT_BOCNNB ;;
   }
 
@@ -2493,7 +2485,6 @@ view: records {
   dimension: int_boernr {
     type: number
     label: "Conversion Trading Unit"
-    view_label: "Conversion Trading Unit"
     sql: ${TABLE}.INT_BOERNR ;;
   }
 
@@ -2520,7 +2511,6 @@ view: records {
   dimension: int_boexst {
     type: string
     label: "Cash Settlement Ind"
-    view_label: "Cash Settlement Ind"
     sql: ${TABLE}.INT_BOEXST ;;
   }
 
@@ -2712,7 +2702,6 @@ view: records {
   dimension: int_bojdtx {
     type: string
     label: "Class Short Name"
-    view_label: "Class Short Name"
     sql: ${TABLE}.INT_BOJDTX ;;
   }
 
@@ -3279,7 +3268,6 @@ view: records {
   dimension: int_bpbbmd {
     type: string
     label: "ULV Expiry Date"
-    view_label: "ULV Expiry Date"
     sql: ${TABLE}.INT_BPBBMD ;;
   }
 
@@ -3416,7 +3404,6 @@ view: records {
   dimension: int_loq4_ns {
     type: number
     label: "Contract Size"
-    view_label: "Contract Size"
     sql: ${TABLE}.INT_LOQ4NS ;;
   }
 
@@ -3603,7 +3590,6 @@ view: records {
   dimension: int_swjpmd {
     type: string
     label: "Last Trading Date"
-    view_label: "Last Trading Date"
     sql: ${TABLE}.INT_SWJPMD ;;
   }
 
@@ -3630,7 +3616,6 @@ view: records {
   dimension: int_swjqmd {
     type: string
     label: "First Notice Date"
-    view_label: "First Notice Date"
     sql: ${TABLE}.INT_SWJQMD ;;
   }
 
@@ -3657,7 +3642,6 @@ view: records {
   dimension: int_swjrmd {
     type: string
     label: "Last Notice Date"
-    view_label: "Last Notice Date"
     sql: ${TABLE}.INT_SWJRMD ;;
   }
 
@@ -3784,7 +3768,6 @@ view: records {
   dimension: int_swunn1 {
     type: string
     label: "Contract Year Month"
-    view_label: "Contract Year Month"
     sql: ${TABLE}.INT_SWUNN1 ;;
   }
 
