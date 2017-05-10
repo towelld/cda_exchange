@@ -2704,7 +2704,7 @@ view: records {
     label: "Class Short Name"
     sql: ${TABLE}.INT_BOJDTX ;;
     html:
-    {% if int_bojdtx_complete.value == 0 || int_bojdtx_conform.value = 0 || int_bojdtx_unique.value = 0 || int_bojdtx_valid.value = 0 %}
+    {% if {{ int_bojdtx_complete._value }} == 0 || {{ int_bojdtx_conform._value }} == 0 || {{ int_bojdtx_unique._value }} == 0 || {{ int_bojdtx_valid._value }} == 0 %}
     <p style="color: black; background-color: #df5555">{{ rendered_value }}</p>
     {% endif %}
     ;;
