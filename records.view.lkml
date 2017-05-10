@@ -631,6 +631,7 @@ view: records {
 
   dimension: int_a7_a8_st {
     type: string
+    view_label: "Option Type"
     sql: ${TABLE}.INT_A7A8ST ;;
   }
 
@@ -801,6 +802,7 @@ view: records {
 
   dimension: int_a7_ammd {
     type: string
+    view_label: "Expiry Date"
     sql: ${TABLE}.INT_A7AMMD ;;
   }
 
@@ -2001,6 +2003,7 @@ view: records {
 
   dimension: int_boabcd {
     type: string
+    view_label: "Currency"
     sql: ${TABLE}.INT_BOABCD ;;
   }
 
@@ -2051,6 +2054,7 @@ view: records {
 
   dimension: int_boafcd {
     type: string
+    view_label: "Exchange Code"
     sql: ${TABLE}.INT_BOAFCD ;;
   }
 
@@ -2076,6 +2080,7 @@ view: records {
 
   dimension: int_boajcd {
     type: string
+    view_label: "Product Group Code"
     sql: ${TABLE}.INT_BOAJCD ;;
   }
 
@@ -2101,6 +2106,7 @@ view: records {
 
   dimension: int_boakcd {
     type: string
+    view_label: "Symbol"
     sql: ${TABLE}.INT_BOAKCD ;;
   }
 
@@ -2277,6 +2283,7 @@ view: records {
 
   dimension: int_bocnnb {
     type: number
+    view_label: "Trading Unit"
     sql: ${TABLE}.INT_BOCNNB ;;
   }
 
@@ -2477,6 +2484,7 @@ view: records {
 
   dimension: int_boernr {
     type: number
+    view_label: "Conversion Trading Unit"
     sql: ${TABLE}.INT_BOERNR ;;
   }
 
@@ -2502,6 +2510,7 @@ view: records {
 
   dimension: int_boexst {
     type: string
+    view_label: "Cash Settlement Ind"
     sql: ${TABLE}.INT_BOEXST ;;
   }
 
@@ -2692,6 +2701,7 @@ view: records {
 
   dimension: int_bojdtx {
     type: string
+    view_label: "Class Short Name"
     sql: ${TABLE}.INT_BOJDTX ;;
   }
 
@@ -3257,6 +3267,7 @@ view: records {
 
   dimension: int_bpbbmd {
     type: string
+    view_label: "ULV Expiry Date"
     sql: ${TABLE}.INT_BPBBMD ;;
   }
 
@@ -3392,6 +3403,7 @@ view: records {
 
   dimension: int_loq4_ns {
     type: number
+    view_label: "Contract Size"
     sql: ${TABLE}.INT_LOQ4NS ;;
   }
 
@@ -3577,6 +3589,7 @@ view: records {
 
   dimension: int_swjpmd {
     type: string
+    view_label: "Last Trading Date"
     sql: ${TABLE}.INT_SWJPMD ;;
   }
 
@@ -3602,6 +3615,7 @@ view: records {
 
   dimension: int_swjqmd {
     type: string
+    view_label: "First Notice Date"
     sql: ${TABLE}.INT_SWJQMD ;;
   }
 
@@ -3627,6 +3641,7 @@ view: records {
 
   dimension: int_swjrmd {
     type: string
+    view_label: "Last Notice Date"
     sql: ${TABLE}.INT_SWJRMD ;;
   }
 
@@ -3752,6 +3767,7 @@ view: records {
 
   dimension: int_swunn1 {
     type: string
+    view_label: "Contract Year Month"
     sql: ${TABLE}.INT_SWUNN1 ;;
   }
 
