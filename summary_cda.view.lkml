@@ -97,19 +97,19 @@ view: summary_cda {
   }
   measure: red {
     type: number
-    sql: case when ${summary_cda.sum_rule}*1.0/${summary_cda.sum_total}*1.0<1.0 then ${summary_cda.sum_rule}*1.0/${summary_cda.sum_total}*1.0 else 0 end  ;;
+    sql: case when ${summary_cda.sum_rule}*1.0/${summary_cda.sum_total}*1.0<${summary_cdatolerance.rag_upper} then ${summary_cda.sum_rule}*1.0/${summary_cda.sum_total}*1.0 else 0 end  ;;
     value_format_name: percent_2
     drill_fields: [records*,checks*]
   }
   measure: amber {
     type: number
-    sql: case when ${summary_cda.sum_rule}*1.0/${summary_cda.sum_total}*1.0>=0.90 then case when ${summary_cda.sum_rule}*1.0/${summary_cda.sum_total}*1.0<0.95 then ${summary_cda.sum_rule}*1.0/${summary_cda.sum_total}*1.0 else 0 end else 0 end  ;;
+    sql: case when ${summary_cda.sum_rule}*1.0/${summary_cda.sum_total}*1.0>=${summary_cdatolerance.rag_lower} then case when ${summary_cda.sum_rule}*1.0/${summary_cda.sum_total}*1.0<${summary_cdatolerance.rag_upper} then ${summary_cda.sum_rule}*1.0/${summary_cda.sum_total}*1.0 else 0 end else 0 end  ;;
     value_format_name: percent_2
     drill_fields: [records*,checks*]
   }
   measure: green {
     type: number
-    sql: case when ${summary_cda.sum_rule}*1.0/${summary_cda.sum_total}*1.0>=1.0 then ${summary_cda.sum_rule}*1.0/${summary_cda.sum_total}*1.0 else 0 end  ;;
+    sql: case when ${summary_cda.sum_rule}*1.0/${summary_cda.sum_total}*1.0>=${summary_cdatolerance.rag_upper} then ${summary_cda.sum_rule}*1.0/${summary_cda.sum_total}*1.0 else 0 end  ;;
     value_format_name: percent_2
     drill_fields: [records*,checks*]
   }
