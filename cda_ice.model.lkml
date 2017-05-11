@@ -26,13 +26,6 @@ explore: v_cdatolerances {
   }
 }
 
-explore: v_summary {
-  join: data_tolerances {
-    sql_on: ${data_tolerances.element_id} = ${v_summary.element_id} ;;
-    relationship: one_to_one
-  }
-}
-
 explore: v_cdahighlights_summary {}
 
 explore: v_cdahighlights_rags {
