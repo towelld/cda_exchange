@@ -61,8 +61,8 @@
       type: looker_bar
       model: cda_ice
       explore: summary_cda
-      dimensions: [data_elements.feature_description]
-      measures: [summary_cda.red, summary_cda.amber, summary_cda.green, summary_cda.total100, summary_cda.sort_order]
+      dimensions: [data_elements.feature_description, summary_cda.sort_order, summary_cdatolerance.rag_lower,summary_cdatolerance.rag_upper]
+      measures: [summary_cda.red, summary_cda.amber, summary_cda.green, summary_cda.total100]
       filters:
         summary_cda.rule_type_id: '1'
       listen:
@@ -99,13 +99,14 @@
       show_silhouette: false
       totals_color: "#808080"
       series_types: {}
-      hidden_fields: [summary_cda.sort_order]
+      hidden_fields: [summary_cda.sort_order, summary_cdatolerance.rag_lower, summary_cdatolerance.rag_upper]
       series_colors:
         summary_cda.red: "#df5555"
         summary_cda.amber: "#eaa153"
         summary_cda.green: "#92c263"
         summary_cda.total100: "#646569"
       hide_legend: true
+
 
     - name: cda_ice_summary_timely
       title: Timeliness
