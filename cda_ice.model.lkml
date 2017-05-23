@@ -116,7 +116,7 @@ explore: summary {
 
 explore: files {}
 
-explore: summary_cdatolerance {}
+explore: summary_cda_tolerance {}
 
 explore: summary_cda {
   join: summary_cda_record_link {
@@ -139,8 +139,8 @@ explore: summary_cda {
     sql_on: ${data_families.family_id} = ${data_family_element_link.family_id} ;;
     relationship: many_to_one
   }
-  join: summary_cdatolerance  {
-    sql_on: ${summary_cdatolerance.rule_type_id} = ${summary_cda.rule_type_id} and ${summary_cdatolerance.element_id} = ${summary_cda.element_id} ;;
+  join: summary_cda_tolerance  {
+    sql_on: ${summary_cda_tolerance.rule_type_id} = ${summary_cda.rule_type_id} and ${summary_cda_tolerance.element_id} = ${summary_cda.element_id} ;;
     relationship: one_to_one
   }
 }

@@ -1,4 +1,4 @@
-view: summary_cdatolerance {
+view: summary_cda_tolerance {
   sql_table_name: DemoIce.SummaryCDATolerance ;;
 
   dimension: element_id {

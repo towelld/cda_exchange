@@ -56,15 +56,13 @@
       title: Completeness
       left: 2
       top: 0
-      height: 275
+      height: 15
       width: 15
       type: looker_bar
       model: cda_ice
       explore: summary_cda
-      dimensions: [data_elements.feature_description, summary_cda.sort_order, summary_cdatolerance.rag_lower,summary_cdatolerance.rag_upper]
+      dimensions: [data_elements.feature_description, summary_cda.sort_order, summary_cda_tolerance.rag_lower,summary_cda_tolerance.rag_upper]
       measures: [summary_cda.red, summary_cda.amber, summary_cda.green, summary_cda.total100]
-      filters:
-        summary_cda.rule_type_id: '1'
       listen:
         feature_description: data_elements.feature_description
         family_name: data_families.family_name
@@ -72,6 +70,8 @@
         currency: summary_cda.currency
         expiry: summary_cda.expiry
         expired: summary_cda.expired
+      filters:
+        summary_cda.rule_type_id: '1'
       sorts: [summary_cda.sort_order]
       limit: '500'
       column_limit: '50'
@@ -99,7 +99,7 @@
       show_silhouette: false
       totals_color: "#808080"
       series_types: {}
-      hidden_fields: [summary_cda.sort_order, summary_cdatolerance.rag_lower, summary_cdatolerance.rag_upper]
+      hidden_fields: [summary_cda.sort_order, summary_cda_tolerance.rag_lower, summary_cda_tolerance.rag_upper]
       series_colors:
         summary_cda.red: "#df5555"
         summary_cda.amber: "#eaa153"
@@ -107,43 +107,27 @@
         summary_cda.total100: "#646569"
       hide_legend: true
 
-
     - name: cda_ice_summary_timely
       title: Timeliness
       left: 17
       top: 0
-      height: 275
+      height: 15
       width: 10
       type: looker_bar
       model: cda_ice
-      explore: summary
-      dimensions: [data_elements.feature_description]
-      measures: [summary.sum_timely, summary.sum_total, summary.sort_order]
+      explore: summary_cda
+      dimensions: [data_elements.feature_description, summary_cda.sort_order, summary_cda_tolerance.rag_lower,summary_cda_tolerance.rag_upper]
+      measures: [summary_cda.red, summary_cda.amber, summary_cda.green, summary_cda.total100]
+      filters:
+        summary_cda.rule_type_id: '6'
       listen:
         feature_description: data_elements.feature_description
         family_name: data_families.family_name
-      dynamic_fields:
-      - table_calculation: red
-        label: Red
-        expression: 'if (${summary.sum_timely}/${summary.sum_total}<1.0,${summary.sum_timely}/${summary.sum_total},0)'
-        value_format:
-        value_format_name: percent_2
-      - table_calculation: amber
-        label: Amber
-        expression: 'if (${summary.sum_timely}/${summary.sum_total}>=0.90,if(${summary.sum_timely}/${summary.sum_total}<0.95,${summary.sum_timely}/${summary.sum_total},0),0)'
-        value_format:
-        value_format_name: percent_2
-      - table_calculation: green
-        label: Green
-        expression: 'if (${summary.sum_timely}/${summary.sum_total}>=1.0,${summary.sum_timely}/${summary.sum_total},0)'
-        value_format:
-        value_format_name: percent_2
-      - table_calculation: '100'
-        label: 100%
-        expression: '1-(${summary.sum_timely}/${summary.sum_total})'
-        value_format:
-        value_format_name: percent_2
-      sorts: [summary.sort_order]
+        product_group: summary_cda.product_group
+        currency: summary_cda.currency
+        expiry: summary_cda.expiry
+        expired: summary_cda.expired
+      sorts: [summary_cda.sort_order]
       limit: '500'
       column_limit: '50'
       query_timezone: Europe/London
@@ -170,52 +154,35 @@
       show_silhouette: false
       totals_color: "#808080"
       series_types: {}
-      hidden_fields: [summary.sum_timely,summary.sum_total, summary.sort_order]
+      hidden_fields: [summary_cda.sort_order, summary_cda_tolerance.rag_lower, summary_cda_tolerance.rag_upper]
       series_colors:
-        '100': "#646569"
-        red: "#df5555"
-        amber: "#eaa153"
-        green: "#92c263"
+        summary_cda.red: "#df5555"
+        summary_cda.amber: "#eaa153"
+        summary_cda.green: "#92c263"
+        summary_cda.total100: "#646569"
       hide_legend: true
-      y_axis_min: ['0.85']
-      y_axis_max: ['1']
 
     - name: cda_ice_summary_accurate
       title: Accuracy
       left: 27
       top: 0
-      height: 275
+      height: 15
       width: 10
       type: looker_bar
       model: cda_ice
-      explore: summary
-      dimensions: [data_elements.feature_description]
-      measures: [summary.sum_accurate, summary.sum_total, summary.sort_order]
+      explore: summary_cda
+      dimensions: [data_elements.feature_description, summary_cda.sort_order, summary_cda_tolerance.rag_lower,summary_cda_tolerance.rag_upper]
+      measures: [summary_cda.red, summary_cda.amber, summary_cda.green, summary_cda.total100]
+      filters:
+        summary_cda.rule_type_id: '11'
       listen:
         feature_description: data_elements.feature_description
         family_name: data_families.family_name
-      dynamic_fields:
-      - table_calculation: red
-        label: Red
-        expression: 'if (${summary.sum_accurate}/${summary.sum_total}<1.0,${summary.sum_accurate}/${summary.sum_total},0)'
-        value_format:
-        value_format_name: percent_2
-      - table_calculation: amber
-        label: Amber
-        expression: 'if (${summary.sum_accurate}/${summary.sum_total}>=0.90,if(${summary.sum_accurate}/${summary.sum_total}<0.95,${summary.sum_accurate}/${summary.sum_total},0),0)'
-        value_format:
-        value_format_name: percent_2
-      - table_calculation: green
-        label: Green
-        expression: 'if (${summary.sum_accurate}/${summary.sum_total}>=1.0,${summary.sum_accurate}/${summary.sum_total},0)'
-        value_format:
-        value_format_name: percent_2
-      - table_calculation: '100'
-        label: 100%
-        expression: '1-(${summary.sum_accurate}/${summary.sum_total})'
-        value_format:
-        value_format_name: percent_2
-      sorts: [summary.sort_order]
+        product_group: summary_cda.product_group
+        currency: summary_cda.currency
+        expiry: summary_cda.expiry
+        expired: summary_cda.expired
+      sorts: [summary_cda.sort_order]
       limit: '500'
       column_limit: '50'
       query_timezone: Europe/London
@@ -242,52 +209,35 @@
       show_silhouette: false
       totals_color: "#808080"
       series_types: {}
-      hidden_fields: [summary.sum_accurate,summary.sum_total, summary.sort_order]
+      hidden_fields: [summary_cda.sort_order, summary_cda_tolerance.rag_lower, summary_cda_tolerance.rag_upper]
       series_colors:
-        '100': "#646569"
-        red: "#df5555"
-        amber: "#eaa153"
-        green: "#92c263"
+        summary_cda.red: "#df5555"
+        summary_cda.amber: "#eaa153"
+        summary_cda.green: "#92c263"
+        summary_cda.total100: "#646569"
       hide_legend: true
-      y_axis_min: ['0.85']
-      y_axis_max: ['1']
 
     - name: cda_ice_summary_conform
       title: Conformity
       left: 37
       top: 0
-      height: 275
+      height: 15
       width: 10
       type: looker_bar
       model: cda_ice
-      explore: summary
-      dimensions: [data_elements.feature_description]
-      measures: [summary.sum_conform, summary.sum_total, summary.sort_order]
+      explore: summary_cda
+      dimensions: [data_elements.feature_description, summary_cda.sort_order, summary_cda_tolerance.rag_lower,summary_cda_tolerance.rag_upper]
+      measures: [summary_cda.red, summary_cda.amber, summary_cda.green, summary_cda.total100]
+      filters:
+        summary_cda.rule_type_id: '2'
       listen:
         feature_description: data_elements.feature_description
         family_name: data_families.family_name
-      dynamic_fields:
-      - table_calculation: red
-        label: Red
-        expression: 'if (${summary.sum_conform}/${summary.sum_total}<1.0,${summary.sum_conform}/${summary.sum_total},0)'
-        value_format:
-        value_format_name: percent_2
-      - table_calculation: amber
-        label: Amber
-        expression: 'if (${summary.sum_conform}/${summary.sum_total}>=0.90,if(${summary.sum_conform}/${summary.sum_total}<0.95,${summary.sum_conform}/${summary.sum_total},0),0)'
-        value_format:
-        value_format_name: percent_2
-      - table_calculation: green
-        label: Green
-        expression: 'if (${summary.sum_conform}/${summary.sum_total}>=1.0,${summary.sum_conform}/${summary.sum_total},0)'
-        value_format:
-        value_format_name: percent_2
-      - table_calculation: '100'
-        label: 100%
-        expression: '1-(${summary.sum_conform}/${summary.sum_total})'
-        value_format:
-        value_format_name: percent_2
-      sorts: [summary.sort_order]
+        product_group: summary_cda.product_group
+        currency: summary_cda.currency
+        expiry: summary_cda.expiry
+        expired: summary_cda.expired
+      sorts: [summary_cda.sort_order]
       limit: '500'
       column_limit: '50'
       query_timezone: Europe/London
@@ -314,52 +264,35 @@
       show_silhouette: false
       totals_color: "#808080"
       series_types: {}
-      hidden_fields: [summary.sum_conform, summary.sum_total, summary.sort_order]
+      hidden_fields: [summary_cda.sort_order, summary_cda_tolerance.rag_lower, summary_cda_tolerance.rag_upper]
       series_colors:
-        '100': "#646569"
-        red: "#df5555"
-        amber: "#eaa153"
-        green: "#92c263"
+        summary_cda.red: "#df5555"
+        summary_cda.amber: "#eaa153"
+        summary_cda.green: "#92c263"
+        summary_cda.total100: "#646569"
       hide_legend: true
-      y_axis_min: ['0.85']
-      y_axis_max: ['1']
 
     - name: cda_ice_summary_valid
       title: Validity
       left: 47
       top: 0
-      height: 275
+      height: 15
       width: 10
       type: looker_bar
       model: cda_ice
-      explore: summary
-      dimensions: [data_elements.feature_description]
-      measures: [summary.sum_valid, summary.sum_total, summary.sort_order]
+      explore: summary_cda
+      dimensions: [data_elements.feature_description, summary_cda.sort_order, summary_cda_tolerance.rag_lower,summary_cda_tolerance.rag_upper]
+      measures: [summary_cda.red, summary_cda.amber, summary_cda.green, summary_cda.total100]
+      filters:
+        summary_cda.rule_type_id: '3'
       listen:
         feature_description: data_elements.feature_description
         family_name: data_families.family_name
-      dynamic_fields:
-      - table_calculation: red
-        label: Red
-        expression: 'if (${summary.sum_valid}/${summary.sum_total}<0.90,${summary.sum_valid}/${summary.sum_total},0)'
-        value_format:
-        value_format_name: percent_2
-      - table_calculation: amber
-        label: Amber
-        expression: 'if (${summary.sum_valid}/${summary.sum_total}>=0.90,if(${summary.sum_valid}/${summary.sum_total}<0.95,${summary.sum_valid}/${summary.sum_total},0),0)'
-        value_format:
-        value_format_name: percent_2
-      - table_calculation: green
-        label: Green
-        expression: 'if (${summary.sum_valid}/${summary.sum_total}>=0.95,${summary.sum_valid}/${summary.sum_total},0)'
-        value_format:
-        value_format_name: percent_2
-      - table_calculation: '100'
-        label: 100%
-        expression: '1-(${summary.sum_valid}/${summary.sum_total})'
-        value_format:
-        value_format_name: percent_2
-      sorts: [summary.sort_order]
+        product_group: summary_cda.product_group
+        currency: summary_cda.currency
+        expiry: summary_cda.expiry
+        expired: summary_cda.expired
+      sorts: [summary_cda.sort_order]
       limit: '500'
       column_limit: '50'
       query_timezone: Europe/London
@@ -386,52 +319,35 @@
       show_silhouette: false
       totals_color: "#808080"
       series_types: {}
-      hidden_fields: [summary.sum_valid, summary.sum_total, summary.sort_order]
+      hidden_fields: [summary_cda.sort_order, summary_cda_tolerance.rag_lower, summary_cda_tolerance.rag_upper]
       series_colors:
-        '100': "#646569"
-        red: "#df5555"
-        amber: "#eaa153"
-        green: "#92c263"
+        summary_cda.red: "#df5555"
+        summary_cda.amber: "#eaa153"
+        summary_cda.green: "#92c263"
+        summary_cda.total100: "#646569"
       hide_legend: true
-      y_axis_min: ['0.85']
-      y_axis_max: ['1']
 
     - name: cda_ice_summary_consistent
       title: Consistency
       left: 57
       top: 0
-      height: 275
+      height: 15
       width: 10
       type: looker_bar
       model: cda_ice
-      explore: summary
-      dimensions: [data_elements.feature_description]
-      measures: [summary.sum_consistent, summary.sum_total, summary.sort_order]
+      explore: summary_cda
+      dimensions: [data_elements.feature_description, summary_cda.sort_order, summary_cda_tolerance.rag_lower,summary_cda_tolerance.rag_upper]
+      measures: [summary_cda.red, summary_cda.amber, summary_cda.green, summary_cda.total100]
+      filters:
+        summary_cda.rule_type_id: '4'
       listen:
         feature_description: data_elements.feature_description
         family_name: data_families.family_name
-      dynamic_fields:
-      - table_calculation: red
-        label: Red
-        expression: 'if (${summary.sum_consistent}/${summary.sum_total}<0.90,${summary.sum_consistent}/${summary.sum_total},0)'
-        value_format:
-        value_format_name: percent_2
-      - table_calculation: amber
-        label: Amber
-        expression: 'if (${summary.sum_consistent}/${summary.sum_total}>=0.90,if(${summary.sum_consistent}/${summary.sum_total}<0.95,${summary.sum_consistent}/${summary.sum_total},0),0)'
-        value_format:
-        value_format_name: percent_2
-      - table_calculation: green
-        label: Green
-        expression: 'if (${summary.sum_consistent}/${summary.sum_total}>=0.95,${summary.sum_consistent}/${summary.sum_total},0)'
-        value_format:
-        value_format_name: percent_2
-      - table_calculation: '100'
-        label: 100%
-        expression: '1-(${summary.sum_consistent}/${summary.sum_total})'
-        value_format:
-        value_format_name: percent_2
-      sorts: [summary.sort_order]
+        product_group: summary_cda.product_group
+        currency: summary_cda.currency
+        expiry: summary_cda.expiry
+        expired: summary_cda.expired
+      sorts: [summary_cda.sort_order]
       limit: '500'
       column_limit: '50'
       query_timezone: Europe/London
@@ -458,52 +374,35 @@
       show_silhouette: false
       totals_color: "#808080"
       series_types: {}
-      hidden_fields: [summary.sum_consistent, summary.sum_total, summary.sort_order]
+      hidden_fields: [summary_cda.sort_order, summary_cda_tolerance.rag_lower, summary_cda_tolerance.rag_upper]
       series_colors:
-        '100': "#646569"
-        red: "#df5555"
-        amber: "#eaa153"
-        green: "#92c263"
+        summary_cda.red: "#df5555"
+        summary_cda.amber: "#eaa153"
+        summary_cda.green: "#92c263"
+        summary_cda.total100: "#646569"
       hide_legend: true
-      y_axis_min: ['0.85']
-      y_axis_max: ['1']
 
     - name: cda_ice_summary_unique
       title: Uniqueness
       left: 67
       top: 0
-      height: 275
+      height: 15
       width: 10
       type: looker_bar
       model: cda_ice
-      explore: summary
-      dimensions: [data_elements.feature_description]
-      measures: [summary.sum_unique, summary.sum_total, summary.sort_order]
+      explore: summary_cda
+      dimensions: [data_elements.feature_description, summary_cda.sort_order, summary_cda_tolerance.rag_lower,summary_cda_tolerance.rag_upper]
+      measures: [summary_cda.red, summary_cda.amber, summary_cda.green, summary_cda.total100]
+      filters:
+        summary_cda.rule_type_id: '5'
       listen:
         feature_description: data_elements.feature_description
         family_name: data_families.family_name
-      dynamic_fields:
-      - table_calculation: red
-        label: Red
-        expression: 'if (${summary.sum_unique}/${summary.sum_total}<0.90,${summary.sum_unique}/${summary.sum_total},0)'
-        value_format:
-        value_format_name: percent_2
-      - table_calculation: amber
-        label: Amber
-        expression: 'if (${summary.sum_unique}/${summary.sum_total}>=0.90,if(${summary.sum_unique}/${summary.sum_total}<0.95,${summary.sum_unique}/${summary.sum_total},0),0)'
-        value_format:
-        value_format_name: percent_2
-      - table_calculation: green
-        label: Green
-        expression: 'if (${summary.sum_unique}/${summary.sum_total}>=0.95,${summary.sum_unique}/${summary.sum_total},0)'
-        value_format:
-        value_format_name: percent_2
-      - table_calculation: '100'
-        label: 100%
-        expression: '1-(${summary.sum_unique}/${summary.sum_total})'
-        value_format:
-        value_format_name: percent_2
-      sorts: [summary.sort_order]
+        product_group: summary_cda.product_group
+        currency: summary_cda.currency
+        expiry: summary_cda.expiry
+        expired: summary_cda.expired
+      sorts: [summary_cda.sort_order]
       limit: '500'
       column_limit: '50'
       query_timezone: Europe/London
@@ -530,12 +429,10 @@
       show_silhouette: false
       totals_color: "#808080"
       series_types: {}
-      hidden_fields: [summary.sum_unique, summary.sum_total, summary.sort_order]
+      hidden_fields: [summary_cda.sort_order, summary_cda_tolerance.rag_lower, summary_cda_tolerance.rag_upper]
       series_colors:
-        '100': "#646569"
-        red: "#df5555"
-        amber: "#eaa153"
-        green: "#92c263"
+        summary_cda.red: "#df5555"
+        summary_cda.amber: "#eaa153"
+        summary_cda.green: "#92c263"
+        summary_cda.total100: "#646569"
       hide_legend: true
-      y_axis_min: ['0.85']
-      y_axis_max: ['1']
