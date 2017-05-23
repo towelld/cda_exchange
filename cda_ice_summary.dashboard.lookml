@@ -119,7 +119,7 @@
       dimensions: [data_elements.feature_description, summary_cda.sort_order, summary_cda_tolerance.rag_lower,summary_cda_tolerance.rag_upper]
       measures: [summary_cda.red, summary_cda.amber, summary_cda.green, summary_cda.total100]
       filters:
-        summary_cda.rule_type_id: '6'
+        summary_cda.rule_type_id: '1'
       listen:
         feature_description: data_elements.feature_description
         family_name: data_families.family_name
@@ -174,7 +174,7 @@
       dimensions: [data_elements.feature_description, summary_cda.sort_order, summary_cda_tolerance.rag_lower,summary_cda_tolerance.rag_upper]
       measures: [summary_cda.red, summary_cda.amber, summary_cda.green, summary_cda.total100]
       filters:
-        summary_cda.rule_type_id: '11'
+        summary_cda.rule_type_id: '1'
       listen:
         feature_description: data_elements.feature_description
         family_name: data_families.family_name
@@ -284,7 +284,7 @@
       dimensions: [data_elements.feature_description, summary_cda.sort_order, summary_cda_tolerance.rag_lower,summary_cda_tolerance.rag_upper]
       measures: [summary_cda.red, summary_cda.amber, summary_cda.green, summary_cda.total100]
       filters:
-        summary_cda.rule_type_id: '3'
+        summary_cda.rule_type_id: '1'
       listen:
         feature_description: data_elements.feature_description
         family_name: data_families.family_name
@@ -339,7 +339,7 @@
       dimensions: [data_elements.feature_description, summary_cda.sort_order, summary_cda_tolerance.rag_lower,summary_cda_tolerance.rag_upper]
       measures: [summary_cda.red, summary_cda.amber, summary_cda.green, summary_cda.total100]
       filters:
-        summary_cda.rule_type_id: '4'
+        summary_cda.rule_type_id: '1'
       listen:
         feature_description: data_elements.feature_description
         family_name: data_families.family_name
@@ -394,7 +394,7 @@
       dimensions: [data_elements.feature_description, summary_cda.sort_order, summary_cda_tolerance.rag_lower,summary_cda_tolerance.rag_upper]
       measures: [summary_cda.red, summary_cda.amber, summary_cda.green, summary_cda.total100]
       filters:
-        summary_cda.rule_type_id: '5'
+        summary_cda.rule_type_id: '1'
       listen:
         feature_description: data_elements.feature_description
         family_name: data_families.family_name
