@@ -88,41 +88,38 @@ view: summary_cda {
   measure: sum_total {
     type: sum
     sql: ${total};;
-    drill_fields: [records*,checks*]
+    drill_fields: [records*]
   }
   measure: sum_rule {
     type: sum
     sql: ${rule_type_count};;
-    drill_fields: [records*,checks*]
+    drill_fields: [records*]
   }
   measure: red {
     type: number
     sql: case when ${summary_cda.sum_rule}*1.0/${summary_cda.sum_total}*1.0<${summary_cdatolerance.rag_upper} then ${summary_cda.sum_rule}*1.0/${summary_cda.sum_total}*1.0 else 0 end  ;;
     value_format_name: percent_2
-    drill_fields: [records*,checks*]
+    drill_fields: [records*]
   }
   measure: amber {
     type: number
     sql: case when ${summary_cda.sum_rule}*1.0/${summary_cda.sum_total}*1.0>${summary_cdatolerance.rag_lower} then case when ${summary_cda.sum_rule}*1.0/${summary_cda.sum_total}*1.0<=${summary_cdatolerance.rag_upper} then ${summary_cda.sum_rule}*1.0/${summary_cda.sum_total}*1.0 else 0 end else 0 end  ;;
     value_format_name: percent_2
-    drill_fields: [records*,checks*]
+    drill_fields: [records*]
   }
   measure: green {
     type: number
     sql: case when ${summary_cda.sum_rule}*1.0/${summary_cda.sum_total}*1.0>=${summary_cdatolerance.rag_upper} then ${summary_cda.sum_rule}*1.0/${summary_cda.sum_total}*1.0 else 0 end  ;;
     value_format_name: percent_2
-    drill_fields: [records*,checks*]
+    drill_fields: [records*]
   }
   measure: total100 {
     type: number
     sql: 1-(${summary_cda.sum_rule}*1.0/${summary_cda.sum_total}*1.0)  ;;
     value_format_name: percent_2
-    drill_fields: [records*,checks*]
+    drill_fields: [records*]
   }
   set: records {
-    fields: [records.int_boajcd,records.int_boafcd,records.int_boakcd,records.int_boexst,records.int_bojdtx,records.int_boabcd,records.int_bocnnb,records.int_bocfc2,records.int_boernr,records.int_a7a8st,records.int_a7ammd,records.int_bpbbmd,records.int_loq4ns,records.int_swjpmd,records.int_swjqmd,records.int_swjrmd,records.int_swunn1]
-  }
-  set: checks {
-    fields: [records.int_bojdtx_complete,records.int_bojdtx_conform,records.int_bojdtx_unique,records.int_bojdtx_valid]
+    fields: [records.cash_settled_display, records.symbol_display, records.class_short_name_display, records.contract_period_display, records.ulv_trading_type_display, records.conversion_trading_unit_display, records.trading_unit_display, records.delivered_trading_unit_display, records.contract_size_display, records.currency_display, records.exchange_code_display, records.expiry_date_display, records.ulv_expiry_date_display, records.process_date_display, records.first_notice_display, records.product_group_code_display, records.last_notice_date_display, records.last_trading_date_display, records.option_type_display]
   }
 }
