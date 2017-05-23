@@ -3960,16 +3960,16 @@ view: records {
     view_label: "Delivered Trading Unit"
     label: "Delivered Trading Unit"
     type: string
-    sql: case when ${TABLE}.int_a7_pwnr_complete = 0 or ${TABLE}.int_a7_pwnr_conform = 0 or ${TABLE}.int_a7_pwnr_valid = 0 or ${TABLE}.int_a7_pwnr_unique = 0 then 'http://localhost:9999/images/clareti/icon_cross.png' else 'http://localhost:9999/images/clareti/icon_tick.png' end ;;
-    html: <img src={{rendered_value}}/> {{records.int_a7_pwnr._value}};;
+    sql: case when ${TABLE}.int_a7pwnr_complete = 0 or ${TABLE}.int_a7pwnr_conform = 0 or ${TABLE}.int_a7pwnr_valid = 0 or ${TABLE}.int_a7pwnr_unique = 0 then 'http://localhost:9999/images/clareti/icon_cross.png' else 'http://localhost:9999/images/clareti/icon_tick.png' end ;;
+    html: <img src={{rendered_value}}/> {{records.int_a7pwnr._value}};;
   }
 
   dimension: contract_size_display {
     view_label: "Contract Size"
     label: "Contract Size"
     type: string
-    sql: case when ${TABLE}.int_loq4_ns_complete = 0 or ${TABLE}.int_loq4_ns_conform = 0 or ${TABLE}.int_loq4_ns_valid = 0 or ${TABLE}.int_loq4_ns_unique = 0 then 'http://localhost:9999/images/clareti/icon_cross.png' else 'http://localhost:9999/images/clareti/icon_tick.png' end ;;
-    html: <img src={{rendered_value}}/> {{records.int_loq4_ns._value}};;
+    sql: case when ${TABLE}.int_loq4ns_complete = 0 or ${TABLE}.int_loq4ns_conform = 0 or ${TABLE}.int_loq4ns_valid = 0 or ${TABLE}.int_loq4ns_unique = 0 then 'http://localhost:9999/images/clareti/icon_cross.png' else 'http://localhost:9999/images/clareti/icon_tick.png' end ;;
+    html: <img src={{rendered_value}}/> {{records.int_loq4ns._value}};;
   }
 
   dimension: currency_display {
@@ -3992,8 +3992,8 @@ view: records {
     view_label: "Expiry Date"
     label: "Expiry Date"
     type: string
-    sql: case when ${TABLE}.int_a7_ammd_complete = 0 or ${TABLE}.int_a7_ammd_conform = 0 or ${TABLE}.int_a7_ammd_valid = 0 or ${TABLE}.int_a7_ammd_unique = 0 then 'http://localhost:9999/images/clareti/icon_cross.png' else 'http://localhost:9999/images/clareti/icon_tick.png' end ;;
-    html: <img src={{rendered_value}}/> {{records.int_a7_ammd._value}};;
+    sql: case when ${TABLE}.int_a7ammd_complete = 0 or ${TABLE}.int_a7ammd_conform = 0 or ${TABLE}.int_a7ammd_valid = 0 or ${TABLE}.int_a7ammd_unique = 0 then 'http://localhost:9999/images/clareti/icon_cross.png' else 'http://localhost:9999/images/clareti/icon_tick.png' end ;;
+    html: <img src={{rendered_value}}/> {{records.int_a7ammd._value}};;
   }
 
   dimension: ulv_expiry_date_display {
@@ -4048,8 +4048,8 @@ view: records {
     view_label: "Option Type"
     label: "Option Type"
     type: string
-    sql: case when ${TABLE}.int_a7_a8_st_complete = 0 or ${TABLE}.int_a7_a8_st_conform = 0 or ${TABLE}.int_a7_a8_st_valid = 0 or ${TABLE}.int_a7_a8_st_unique = 0 then 'http://localhost:9999/images/clareti/icon_cross.png' else 'http://localhost:9999/images/clareti/icon_tick.png' end ;;
-    html: <img src={{rendered_value}}/> {{records.int_a7_a8_st._value}};;
+    sql: case when ${TABLE}.int_a7a8st_complete = 0 or ${TABLE}.int_a7a8st_conform = 0 or ${TABLE}.int_a7a8st_valid = 0 or ${TABLE}.int_a7a8st_unique = 0 then 'http://localhost:9999/images/clareti/icon_cross.png' else 'http://localhost:9999/images/clareti/icon_tick.png' end ;;
+    html: <img src={{rendered_value}}/> {{records.inta7a8_st._value}};;
   }
 
   measure: count {
