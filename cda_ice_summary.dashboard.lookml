@@ -54,10 +54,10 @@
 
     - name: cda_ice_summary_complete
       title: Completeness
-      left: 2
+      left: 0
       top: 0
       height: 200
-      width: 15
+      width: 17
       type: looker_bar
       model: cda_ice
       explore: summary_cda
