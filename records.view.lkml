@@ -3960,7 +3960,7 @@ view: records {
     view_label: "Delivered Trading Unit"
     label: "Delivered Trading Unit"
     type: string
-    sql: case when ${TABLE}.int_a7pwnr_complete = 0 or ${TABLE}.int_a7pwnr_conform = 0 or ${TABLE}.int_a7pwnr_valid = 0 or ${TABLE}.int_a7pwnr_unique = 0 then 'http://localhost:9999/images/clareti/icon_cross.png' else 'http://localhost:9999/images/clareti/icon_tick.png' end ;;
+    sql: case when ${TABLE}.int_a7pwnr_complete = 0 or ${TABLE}.int_a7pwnr_valid = 0 then 'http://localhost:9999/images/clareti/icon_cross.png' else 'http://localhost:9999/images/clareti/icon_tick.png' end ;;
     html: <img src={{rendered_value}}/> {{records.int_a7pwnr._value}};;
   }
 
