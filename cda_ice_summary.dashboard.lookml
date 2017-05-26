@@ -62,7 +62,7 @@
       model: cda_ice
       explore: summary
       dimensions: [data_elements.feature_description]
-      measures: [summary.sum_timely, summary.sum_total, summary.sort_order]
+      measures: [summary.sum_complete, summary.sum_total, summary.sort_order]
       listen:
         feature_description: data_elements.feature_description
         family_name: data_families.family_name
