@@ -116,10 +116,10 @@
       series_types: {}
       hidden_fields: [summary_cda.sort_order,summary.sum_total, summary.sort_order]
       series_colors:
-        summary_cda.red: "#df5555"
-        summary_cda.amber: "#eaa153"
-        summary_cda.green: "#92c263"
-        summary_cda.total100: "#646569"
+        '100': "#646569"
+        red: "#df5555"
+        amber: "#eaa153"
+        green: "#92c263"
       hide_legend: true
 
 
