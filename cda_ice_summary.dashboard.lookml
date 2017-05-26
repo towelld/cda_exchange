@@ -87,7 +87,7 @@
         expression: '1-(${summary.sum_complete}/${summary.sum_total})'
         value_format:
         value_format_name: percent_2
-      sorts: [summary_cda.sort_order]
+      sorts: [summary.sort_order]
       limit: '500'
       column_limit: '50'
       query_timezone: Europe/London
