@@ -57,7 +57,7 @@
       currency: summary_cda.currency
       expiry: summary_cda.expiry
       expired: summary_cda.expired
-    sorts: [summary_cda.passed desc]
+    sorts: [summary_cda.rule_type_id]
     limit: '500'
     column_limit: '50'
     query_timezone: Europe/London
