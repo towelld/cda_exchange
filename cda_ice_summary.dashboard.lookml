@@ -148,7 +148,7 @@
 
     - name: cda_ice_summary_accurate
       title: Accuracy
-      left: 27
+      left: 32
       top: 0
       height: 150
       width: 10
@@ -201,7 +201,7 @@
 
     - name: cda_ice_summary_conform
       title: Conformity
-      left: 37
+      left: 42
       top: 0
       height: 150
       width: 10
@@ -254,7 +254,7 @@
 
     - name: cda_ice_summary_valid
       title: Validity
-      left: 47
+      left: 52
       top: 0
       height: 150
       width: 10
@@ -307,7 +307,7 @@
 
     - name: cda_ice_summary_consistent
       title: Consistency
-      left: 57
+      left: 62
       top: 0
       height: 150
       width: 10
@@ -360,7 +360,7 @@
 
     - name: cda_ice_summary_unique
       title: Uniqueness
-      left: 67
+      left: 72
       top: 0
       height: 150
       width: 10
