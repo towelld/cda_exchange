@@ -1,19 +1,9 @@
 view: summary_cda {
-  sql_table_name: DemoIce.SummaryCDA ;;
-
-  dimension: currency {
-    type: string
-    sql: ${TABLE}.Currency ;;
-  }
+  sql_table_name: demoICE.SummaryCDA ;;
 
   dimension: data_element {
     type: string
     sql: ${TABLE}.data_element ;;
-  }
-
-  dimension: data_family {
-    type: string
-    sql: ${TABLE}.data_family ;;
   }
 
   dimension: element_id {
@@ -21,34 +11,14 @@ view: summary_cda {
     sql: ${TABLE}.element_id ;;
   }
 
-  dimension: expired {
-    type: string
-    sql: ${TABLE}.Expired ;;
-  }
-
-  dimension: expiry {
-    type: string
-    sql: ${TABLE}.Expiry ;;
-  }
-
   dimension: feature {
     type: string
     sql: ${TABLE}.feature ;;
   }
 
-  dimension: load_datetime {
-    type: string
-    sql: ${TABLE}.load_datetime ;;
-  }
-
   dimension: pk {
     type: string
     sql: ${TABLE}.Pk ;;
-  }
-
-  dimension: product_group {
-    type: string
-    sql: ${TABLE}.Product_Group ;;
   }
 
   dimension: rule_type_count {
@@ -76,9 +46,21 @@ view: summary_cda {
     sql: ${TABLE}.total ;;
   }
 
-  dimension: validity {
+  dimension: product_group {
     type: string
-    sql: ${TABLE}.validity ;;
+    sql: ${TABLE}.product_group ;;
+  }
+  dimension: currency {
+    type: string
+    sql: ${TABLE}.currency ;;
+  }
+  dimension: expiry {
+    type: string
+    sql: ${TABLE}.expiry ;;
+  }
+  dimension: expired {
+    type: string
+    sql: ${TABLE}.expired ;;
   }
 
   measure: count {
@@ -134,6 +116,6 @@ view: summary_cda {
     drill_fields: [records*]
   }
   set: records {
-    fields: [records.cash_settled_display, records.symbol_display, records.class_short_name_display, records.contract_period_display, records.ulv_trading_type_display, records.conversion_trading_unit_display, records.trading_unit_display, records.delivered_trading_unit_display, records.contract_size_display, records.currency_display, records.exchange_code_display, records.expiry_date_display, records.ulv_expiry_date_display, records.process_date_display, records.first_notice_display, records.product_group_code_display, records.last_notice_date_display, records.last_trading_date_display, records.option_type_display]
+    fields: [records.exchcode, records.symbol, records.exchsymbol]
   }
 }
