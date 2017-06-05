@@ -45,7 +45,7 @@
       left: 0
       top: 0
       height: 150
-      width: 18
+      width: 19
       type: looker_bar
       model: cda_ice
       explore: summary_cda
