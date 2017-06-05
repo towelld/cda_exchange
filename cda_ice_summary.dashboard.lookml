@@ -17,26 +17,26 @@
     label: 'Product Group'
     type: field_filter
     model: cda_ice
-    explore: summary
-    field: summary.product_group
+    explore: summary_cda
+    field: summary_cda.product_group
   - name: currency
     label: 'Currency'
     type: field_filter
     model: cda_ice
-    explore: summary
-    field: summary.currency
+    explore: summary_cda
+    field: summary_cda.currency
   - name: expiry
     label: 'Expiry'
     type: field_filter
     model: cda_ice
-    explore: summary
-    field: summary.expiry
+    explore: summary_cda
+    field: summary_cda.expiry
   - name: expired
     label: 'Expired'
     type: field_filter
     model: cda_ice
-    explore: summary
-    field: summary.expired
+    explore: summary_cda
+    field: summary_cda.expired
 
   elements:
 
