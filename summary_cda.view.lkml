@@ -116,6 +116,6 @@ view: summary_cda {
     drill_fields: [records*]
   }
   set: records {
-    fields: [records.exchcode, records.symbol, records.exchsymbol]
+    fields: [records.option_type_display, records.currency_display, records.exchange_code_display, records.symbol_display, records.cash_settled_display, records.class_short_name_display, records.contract_period_display, records.ulv_trading_type_display, records.conversion_trading_unit_display, records.trading_unit_display, records.delivered_trading_unit_display, records.contract_size_display, records.expiry_date_display, records.ulv_expiry_date_display, records.process_date_display, records.first_notice_display, records.product_group_code_display, records.last_notice_date_display, records.last_trading_date_display]
   }
 }
