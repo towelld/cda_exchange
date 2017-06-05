@@ -45,7 +45,7 @@
       left: 2
       top: 0
       height: 150
-      width: 15
+      width: 20
       type: looker_bar
       model: cda_ice
       explore: summary_cda
@@ -95,7 +95,7 @@
 
     - name: cda_ice_summary_timely
       title: Timeliness
-      left: 17
+      left: 22
       top: 0
       height: 150
       width: 10
