@@ -10,6 +10,18 @@ view: data_elements {
     type: string
     label: "Description"
     sql: ${TABLE}.feature_description ;;
+    link: {
+      label: "Tolerances"
+      url: "http://localhost:9999/embed/dashboards/cda_ice::cda_ice_tolerances?feature_description={{ value }}"
+    }
+    link: {
+      label: "Business Rules"
+      url: "http://localhost:9999/embed/dashboards/cda_ice::cda_ice_tolerances?rule_type=&feature_description={{ value }}"
+    }
+    link: {
+      label: "Data Elements"
+      url: "http://localhost:9999/embed/dashboards/cda_ice::cda_ice_tolerances?feature_description={{ value }}"
+    }
   }
 
   dimension: feature_name {
