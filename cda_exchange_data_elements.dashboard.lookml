@@ -1,8 +1,8 @@
-- dashboard: cda_ice_tolerances
-  title: ICE Tolerances
+- dashboard: cda_exchange_data_elements
+  title: ICE Data Elements
   layout: grid
   rows:
-    - elements: [cda_ice_tolerances]
+    - elements: [cda_exchange_data_elements]
       height: 1000
   embed_style:
     background_color: "#ffffff"
@@ -15,24 +15,24 @@
   filters:
   - name: feature_description
     type: field_filter
-    model: cda_ice
+    model: cda_exchange
     explore: data_elements
     field: data_elements.feature_description
 
   elements:
 
-  - name: cda_ice_tolerances
-    title: Tolerances
+  - name: cda_exchange_data_elements
+    title: Data Elements
     type: table
-    model: cda_ice
-    explore: v_cdatolerances
-    dimensions: [v_cdatolerances.sort_order, v_cdatolerances.family_name, v_cdatolerances.family_description,
-      data_elements.feature_description, v_cdatolerances.rule_type, v_cdatolerances.green,
-      v_cdatolerances.amber, v_cdatolerances.red, v_cdatolerances.rag_date, v_cdatolerances.rag_comments]
+    model: cda_exchange
+    explore: data_elements
+    dimensions: [data_elements_detail.data_element_name, data_elements_detail.data_family,
+      data_elements_detail.data_element_type, data_elements.feature_description, data_elements_detail.acronym,
+      data_elements_detail.data_element_data_definition]
     listen:
       feature_description: data_elements.feature_description
-    sorts: [data_elements.feature_description, v_cdatolerances.sort_order]
-    limit: '1200'
+    sorts: [data_elements_detail.data_element_name]
+    limit: '500'
     column_limit: '50'
     query_timezone: Europe/London
     show_view_names: false

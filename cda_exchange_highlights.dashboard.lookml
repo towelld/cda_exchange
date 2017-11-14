@@ -1,4 +1,4 @@
-- dashboard: cda_ice_highlights
+- dashboard: cda_exchange_highlights
   title: ICE Highlights
   layout: static
   width: 1500
@@ -16,38 +16,38 @@
   - name: product_group
     label: 'Product Group'
     type: field_filter
-    model: cda_ice
+    model: cda_exchange
     explore: summary_cda
     field: summary_cda.product_group
   - name: currency
     label: 'Currency'
     type: field_filter
-    model: cda_ice
+    model: cda_exchange
     explore: summary_cda
     field: summary_cda.currency
   - name: expiry
     label: 'Expiry'
     type: field_filter
-    model: cda_ice
+    model: cda_exchange
     explore: summary_cda
     field: summary_cda.expiry
   - name: expired
     label: 'Expired'
     type: field_filter
-    model: cda_ice
+    model: cda_exchange
     explore: summary_cda
     field: summary_cda.expired
 
   elements:
 
-  - name: cda_ice_highlights
+  - name: cda_exchange_highlights
     title: Highlights
     left: 0
     top: 0
     height: 10
     width: 30
     type: looker_donut_multiples
-    model: cda_ice
+    model: cda_exchange
     explore: summary_cda
     dimensions: [data_elements_rule_types.rule_type]
     measures: [summary_cda.passed, summary_cda.failed]

@@ -1,12 +1,12 @@
-- dashboard: cda_ice_metrics
+- dashboard: cda_exchange_metrics
   title: ICE Metrics
   layout: grid
   rows:
-    - elements: [cda_ice_records_chart]
+    - elements: [cda_exchange_records_chart]
       height: 300
-    - elements: [cda_ice_records_detail]
+    - elements: [cda_exchange_records_detail]
       height: 150
-    - elements: [cda_ice_rule_count]
+    - elements: [cda_exchange_rule_count]
       height: 3000
   embed_style:
     background_color: "#ffffff"
@@ -18,10 +18,10 @@
 
   elements:
 
-  - name: cda_ice_records_chart
+  - name: cda_exchange_records_chart
     title: Records Loaded
     type: looker_column
-    model: cda_ice
+    model: cda_exchange
     explore: files
     dimensions: [files.file_name]
     pivots: [files.file_name]
@@ -57,10 +57,10 @@
       INT_20170218153900.txt - Files Sum Records: "#646569"
       MICS_20170218153900.txt - Files Sum Records: "#646569"
 
-  - name: cda_ice_records_detail
+  - name: cda_exchange_records_detail
     title: Records Loaded Detail
     type: table
-    model: cda_ice
+    model: cda_exchange
     explore: files
     dimensions: [files.file_name, files.records_loaded, files.file_time_stamp, files.load_time_stamp]
     sorts: [files.file_name]
@@ -80,10 +80,10 @@
     conditional_formatting_include_nulls: false
 
 
-  - name: cda_ice_rule_count
+  - name: cda_exchange_rule_count
     title: Rule Count
     type: looker_bar
-    model: cda_ice
+    model: cda_exchange
     explore: data_elements_rules
     dimensions: [data_elements.feature_description]
     measures: [data_elements_rules.count]

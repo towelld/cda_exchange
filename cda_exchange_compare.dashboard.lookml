@@ -1,4 +1,4 @@
-- dashboard: cda_ice_compare
+- dashboard: cda_exchange_compare
   title: ICE Compare
   layout: static
   width: 1500
@@ -16,49 +16,49 @@
   - name: product_group_1
     label: 'Source 1 - Product Group'
     type: field_filter
-    model: cda_ice
+    model: cda_exchange
     explore: summary_cda
     field: summary_cda.product_group
   - name: currency_1
     label: 'Source 1 - Currency'
     type: field_filter
-    model: cda_ice
+    model: cda_exchange
     explore: summary_cda
     field: summary_cda.currency
   - name: expired_1
     label: 'Source 1 - Expired'
     type: field_filter
-    model: cda_ice
+    model: cda_exchange
     explore: summary_cda
     field: summary_cda.expired
   - name: product_group_2
     label: 'Source 2 - Product Group'
     type: field_filter
-    model: cda_ice
+    model: cda_exchange
     explore: summary_cda
     field: summary_cda.product_group
   - name: currency_2
     label: 'Source 2 - Currency'
     type: field_filter
-    model: cda_ice
+    model: cda_exchange
     explore: summary_cda
     field: summary_cda.currency
   - name: expired_2
     label: 'Source 2 - Expired'
     type: field_filter
-    model: cda_ice
+    model: cda_exchange
     explore: summary_cda
     field: summary_cda.expired
   elements:
 
-  - name: cda_ice_compare_source_1
+  - name: cda_exchange_compare_source_1
     title: Source 1
     type: looker_column
     left: 0
     top: 0
     height: 15
     width: 15
-    model: cda_ice
+    model: cda_exchange
     explore: summary_cda
     measures: [summary_cda.passed, summary_cda.failed]
     listen:
@@ -96,14 +96,14 @@
       summary_cda.failed: "#df5555"
     label_color: ["#000000"]
 
-  - name: cda_ice_compare_source_2
+  - name: cda_exchange_compare_source_2
     title: Source 2
     type: looker_column
     left: 15
     top: 0
     height: 15
     width: 15
-    model: cda_ice
+    model: cda_exchange
     explore: summary_cda
     measures: [summary_cda.passed, summary_cda.failed]
     listen:

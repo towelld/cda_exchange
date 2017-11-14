@@ -1,10 +1,10 @@
-- dashboard: cda_ice_business_rules
-  title: ICE Business Rules
+- dashboard: cda_exchange_business_rules
+  title: Exchange Business Rules
   layout: grid
   rows:
-    - elements: [cda_ice_business_rules_chart]
+    - elements: [cda_exchange_business_rules_chart]
       height: 300
-    - elements: [cda_ice_business_rules]
+    - elements: [cda_exchange_business_rules]
       height: 700
   embed_style:
     background_color: "#ffffff"
@@ -17,26 +17,26 @@
   filters:
   - name: rule_type
     type: field_filter
-    model: cda_ice
+    model: cda_exchange
     explore: data_elements_rule_types
     field: data_elements_rule_types.rule_type
   - name: feature_description
     type: field_filter
-    model: cda_ice
+    model: cda_exchange
     explore: data_elements
     field: data_elements.feature_description
   - name: feature_name
     type: field_filter
-    model: cda_ice
+    model: cda_exchange
     explore: data_elements
     field: data_elements.feature_name
 
   elements:
 
-  - name: cda_ice_business_rules_chart
+  - name: cda_exchange_business_rules_chart
     title: Business Rule Count
     type: looker_column
-    model: cda_ice
+    model: cda_exchange
     explore: data_elements_rules
     dimensions: [data_elements_rule_types.rule_type]
     pivots: [data_elements_rule_types.rule_type]
@@ -80,10 +80,10 @@
       Valid - Data Elements Rule Types Count: '#edc559'
 
 
-  - name: cda_ice_business_rules
+  - name: cda_exchange_business_rules
     title: Business Rules
     type: table
-    model: cda_ice
+    model: cda_exchange
     explore: data_elements_rules
     dimensions: [data_elements.feature_name, data_elements.feature_description, data_elements_rule_types.rule_type, data_elements_rules.rule_description]
     listen:
