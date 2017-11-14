@@ -1,5 +1,5 @@
 - dashboard: cda_exchange_data_elements
-  title: ICE Data Elements
+  title: Exchange Data Elements
   layout: grid
   rows:
     - elements: [cda_exchange_data_elements]

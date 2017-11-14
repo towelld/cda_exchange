@@ -1,5 +1,5 @@
 - dashboard: cda_exchange_highlights
-  title: ICE Highlights
+  title: Exchange Highlights
   layout: static
   width: 1500
   tile_size: 50

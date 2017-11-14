@@ -1,5 +1,5 @@
 - dashboard: cda_exchange_metrics
-  title: ICE Metrics
+  title: Exchange Metrics
   layout: grid
   rows:
     - elements: [cda_exchange_records_chart]

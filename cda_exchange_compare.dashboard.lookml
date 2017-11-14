@@ -1,5 +1,5 @@
 - dashboard: cda_exchange_compare
-  title: ICE Compare
+  title: Exchange Compare
   layout: static
   width: 1500
   tile_size: 50

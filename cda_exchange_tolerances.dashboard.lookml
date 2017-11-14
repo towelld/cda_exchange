@@ -1,5 +1,5 @@
 - dashboard: cda_exchange_tolerances
-  title: ICE Tolerances
+  title: Exchange Tolerances
   layout: grid
   rows:
     - elements: [cda_exchange_tolerances]
